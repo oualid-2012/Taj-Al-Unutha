@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Taj Al-Unutha — Développement personnel féminin, bien-être et connaissance de soi." />
+  <title>Taj Al-Unutha</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav__logo" aria-label="Taj Al-Unutha — Accueil">
+        <!-- IMPORT YOUR LOGO HERE: replace the img src with your logo file path -->
+        <!-- Example: <img src="Asset/logo.png" alt="Taj Al-Unutha" /> -->
+        <span class="nav__logo-text">TAJ AL-UNUTHA</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#hero" class="nav__link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#ebook" class="nav__link" data-i18n="nav.ebook">L'E-book</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#testimonials" class="nav__link" data-i18n="nav.testimonials">Témoignages</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <!-- Right side controls -->
+      <div class="nav__controls">
+        <!-- Language Selector -->
+        <div class="lang-selector" id="langSelector">
+          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtn">
+            <span class="lang-selector__flag" id="langFlag">🇫🇷</span>
+            <span class="lang-selector__code" id="langCode">FR</span>
+            <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="lang-selector__dropdown" role="listbox" id="langDropdown">
+            <li role="option" class="lang-option" data-lang="fr">🇫🇷 <span>Français</span></li>
+            <li role="option" class="lang-option" data-lang="ar">🇸🇦 <span>العربية</span></li>
+            <li role="option" class="lang-option" data-lang="en">🇬🇧 <span>English</span></li>
+          </ul>
+        </div>
+
+        <!-- Mobile hamburger -->
+        <button class="nav__hamburger" id="navHamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="navMobile" aria-hidden="true">
+      <ul class="nav__mobile-links">
+        <li><a href="#hero" class="nav__link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#ebook" class="nav__link" data-i18n="nav.ebook">L'E-book</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#testimonials" class="nav__link" data-i18n="nav.testimonials">Témoignages</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       SECTION B — HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+
+    <!-- Background image from Asset -->
+    <div class="hero__bg">
+      <img
+        src="Asset/Hero Section.webp"
+        alt="Fond céleste Taj Al-Unutha"
+        class="hero__bg-img"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__container">
+
+      <!-- Text side -->
+      <div class="hero__text animate-fade-up">        <span class="hero__eyebrow" data-i18n="hero.eyebrow">E-book gratuit</span>
+        <h1 class="hero__title" data-i18n="hero.title">
+          Et si tu prenais enfin<br />le temps de revenir à toi&nbsp;?
+        </h1>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
+          Découvre les clés pour mieux te connaître, comprendre tes émotions et révéler ton potentiel.
+        </p>
+        <a href="#form" class="btn btn--primary hero__cta" data-i18n="hero.cta">
+          Je découvre mon E-book gratuit
+        </a>
+
+        <!-- ── Social media contact group ── -->
+        <div class="hero__social animate-fade-up animate-delay-3">
+          <span class="hero__social-label" data-i18n="hero.social.label">Restons connectés</span>
+          <div class="hero__social-icons" role="list">
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/latifa.el.azhar/"
+               class="social-icon social-icon--instagram"
+               target="_blank"
+               rel="noopener noreferrer"
+               role="listitem"
+               aria-label="Instagram — @latifa.el.azhar"
+               data-tooltip="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20">
+                <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="4.25" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor"/>
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@Latifacoaching"
+               class="social-icon social-icon--youtube"
+               target="_blank"
+               rel="noopener noreferrer"
+               role="listitem"
+               aria-label="YouTube — @Latifacoaching"
+               data-tooltip="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.955-1.966C18.88 4 12 4 12 4s-6.88 0-8.585.454A2.78 2.78 0 0 0 1.46 6.42 29.1 29.1 0 0 0 1 12a29.1 29.1 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.955 1.966C5.12 20 12 20 12 20s6.88 0 8.585-.454a2.78 2.78 0 0 0 1.955-1.966A29.1 29.1 0 0 0 23 12a29.1 29.1 0 0 0-.46-5.58z" stroke="currentColor" stroke-width="1.5"/>
+                <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:latifa.el.azhar@gmail.com"
+               class="social-icon social-icon--email"
+               role="listitem"
+               aria-label="E-mail — latifa.el.azhar@gmail.com"
+               data-tooltip="E-mail">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20">
+                <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2 7.5l9.293 6.196a1.3 1.3 0 0 0 1.414 0L22 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+
+            <!-- WhatsApp — slightly more prominent -->
+            <a href="https://wa.me/32485075219"
+               class="social-icon social-icon--whatsapp"
+               target="_blank"
+               rel="noopener noreferrer"
+               role="listitem"
+               aria-label="WhatsApp — Contacter Latifa"
+               data-tooltip="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8.5 9.5c0-.828.5-1.5 1.5-1.5h.25c.414 0 .75.336.75.75v.75c0 .345-.234.648-.568.736l-.682.17a6.47 6.47 0 0 0 3.549 3.549l.17-.682a.75.75 0 0 1 .736-.568h.75c.414 0 .75.336.75.75V14c0 1-.672 1.5-1.5 1.5-3.314 0-6-2.686-6-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+          </div><!-- /.hero__social-icons -->
+        </div><!-- /.hero__social -->
+
+      </div><!-- /.hero__text -->
+
+      <!-- Profile photo — centre column -->
+      <div class="hero__profile animate-fade-up animate-delay-2">
+        <img
+          src="Asset/latifa-profile.webp"
+          alt="Latifa — Taj Al-Unutha"
+          class="hero__profile-img"
+          loading="eager"
+          decoding="async"
+          width="420"
+          height="420"
+        />
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SECTION C — E-BOOK BENEFITS
+  ============================================================ -->
+  <section class="benefits" id="ebook">
+    <div class="benefits__container">
+
+      <div class="section-header animate-fade-up">
+        <span class="section-eyebrow" data-i18n="benefits.eyebrow">Ce que tu vas découvrir</span>
+        <h2 class="section-title" data-i18n="benefits.title">
+          Un guide pour commencer ton chemin vers toi-même.
+        </h2>
+      </div>
+
+      <!-- Benefits Showcase with Nature Imagery & E-Book Cover -->
+      <div class="benefits__showcase animate-fade-up">
+        <div class="benefits__showcase-media">
+          <img
+            src="Asset/sectionplay.webp"
+            alt="Élévation et reconnexion — Taj Al-Unutha"
+            class="benefits__showcase-img"
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+          <div class="benefits__showcase-badge" data-i18n="benefits.showcaseBadge">Inspiration & Reconnexion</div>
+        </div>
+        <div class="benefits__showcase-card">
+          <div class="benefits__ebook-preview">
+            <img
+              src="Asset/hf_20261125_011959_311fdc53-5afe-4eb6-9cbe-daf26e9eaa80.webp"
+              alt="Couverture E-book Taj Al-Unutha"
+              class="benefits__ebook-cover"
+              loading="lazy"
+              width="150"
+              height="220"
+            />
+            <div class="benefits__ebook-tag" data-i18n="hero.badge">GRATUIT</div>
+          </div>
+          <div class="benefits__showcase-info">
+            <span class="section-eyebrow" data-i18n="hero.eyebrow">E-book gratuit</span>
+            <h3 class="benefits__showcase-title" data-i18n="benefits.title">Un guide pour commencer ton chemin vers toi-même.</h3>
+            <p class="benefits__showcase-desc" data-i18n="hero.subtitle">Découvre les clés pour mieux te connaître, comprendre tes émotions et révéler ton potentiel.</p>
+            <a href="#form" class="btn btn--primary" data-i18n="benefits.cta">Accéder à l'E-book gratuit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits__grid">
+
+        <!-- Card 1 -->
+        <article class="benefit-card animate-fade-up animate-delay-1">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title" data-i18n="benefits.card1.title">Le corps</h3>
+          <p class="benefit-card__text" data-i18n="benefits.card1.text">
+            Reconnecte-toi à tes sensations. Apprends à habiter ton corps avec douceur et bienveillance.
+          </p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="benefit-card animate-fade-up animate-delay-2">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 14c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v2c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-2z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 18v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title" data-i18n="benefits.card2.title">Les émotions</h3>
+          <p class="benefit-card__text" data-i18n="benefits.card2.text">
+            Apprends à mieux comprendre tes émotions. Transforme ce que tu ressens en force et en clarté.
+          </p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="benefit-card animate-fade-up animate-delay-3">
+          <div class="benefit-card__icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4L18.4 10.8L26 11.6L20.5 16.6L22.3 24L16 20.4L9.7 24L11.5 16.6L6 11.6L13.6 10.8L16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="benefit-card__title" data-i18n="benefits.card3.title">L'épanouissement personnel</h3>
+          <p class="benefit-card__text" data-i18n="benefits.card3.text">
+            Développe ta confiance et ton potentiel. Révèle la femme authentique que tu es.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Secondary CTA -->
+      <div class="benefits__cta animate-fade-up">
+        <a href="#form" class="btn btn--secondary" data-i18n="benefits.cta">
+          Accéder à l'E-book gratuit
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION D — ABOUT TAJ AL-UNUTHA
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="about__container">
+
+      <!-- Photo side -->
+      <div class="about__photo animate-fade-left">
+        <img
+          src="Asset/sectionplay 1.webp"
+          alt="Latifa — Taj Al-Unutha"
+          class="about__img"
+          loading="lazy"
+          width="540"
+          height="675"
+        />
+      </div>
+
+      <!-- Text side -->
+      <div class="about__text animate-fade-right">
+        <span class="section-eyebrow" data-i18n="about.eyebrow">À propos</span>
+        <h2 class="section-title" data-i18n="about.title">Taj Al-Unutha</h2>
+        <p class="about__lead" data-i18n="about.lead">
+          Un espace dédié à celles et ceux qui souhaitent se redécouvrir, se comprendre et s'épanouir.
+        </p>
+        <!-- EDITABLE BIOGRAPHY — Update this text to match Latifa's real biography -->
+        <p class="about__bio" data-i18n="about.bio1">
+          Taj Al-Unutha accueille toutes les personnes en quête de développement personnel et de connaissance de soi, avec un contenu particulièrement dédié au bien-être féminin et à la féminité authentique.
+        </p>
+        <p class="about__bio" data-i18n="about.bio2">
+          Ce projet est né d'une conviction profonde : chaque femme porte en elle une sagesse et une beauté uniques. Il suffit parfois d'un guide pour commencer à les révéler.
+        </p>
+        <!-- CTA -->
+        <a href="#form" class="btn btn--outline" data-i18n="about.cta">
+          Découvrir l'E-book
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION — TESTIMONIALS (INFINITE SCROLL CAROUSEL & MODAL POPUP)
+  ============================================================ -->
+  <section class="testimonials" id="testimonials" aria-label="Témoignages et ressentis">
+    <div class="testimonials__container">
+
+      <div class="section-header animate-fade-up">
+        <span class="section-eyebrow" data-i18n="testimonials.eyebrow">Témoignages & Partages</span>
+        <h2 class="section-title" data-i18n="testimonials.title">Leurs expériences, leurs ressentis</h2>
+        <p class="section-subtitle" data-i18n="testimonials.subtitle">
+          Chaque parcours est unique. Découvrez les témoignages de celles qui ont partagé cette expérience.
+        </p>
+      </div>
+
+    </div><!-- /.testimonials__container -->
+
+    <!-- Full-width infinite scroll belt — single horizontal continuous track -->
+    <div class="testimonials__belt" id="testimonialsBelt">
+      <!-- Scrolling track with cards (duplicated via JS for seamless infinite loop) -->
+      <div class="testimonials__track" id="testiTrack">
+
+        <!-- Card 1 — Asia -->
+        <article class="testi-card" data-avatar="Asset/Asia testimonials.webp" data-author="Asia" data-i18n-author="testimonials.1.author" data-i18n-text="testimonials.1.text" tabindex="0" role="button" aria-label="Témoignage de Asia">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/Asia testimonials.webp" alt="Asia" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.1.author">Asia</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.1.text">« Après les séances avec Latifa, je ressens une belle énergie, une libération de la peur et beaucoup de sensations agréables. J'ai appris à ressentir davantage ma féminité et à bouger mon corps avec plus de fluidité. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 2 — Ghita -->
+        <article class="testi-card" data-avatar="Asset/Ghita testimonials.webp" data-author="Ghita" data-i18n-author="testimonials.2.author" data-i18n-text="testimonials.2.text" tabindex="0" role="button" aria-label="Témoignage de Ghita">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/Ghita testimonials.webp" alt="Ghita" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.2.author">Ghita</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.2.text">« J'apprends progressivement à poser mes limites et à mieux écouter mes besoins. Ce cheminement m'aide à prendre confiance en moi et à avancer à mon rythme. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 3 — Jasmin -->
+        <article class="testi-card" data-avatar="Asset/jasmin testimonials.webp" data-author="Jasmin" data-i18n-author="testimonials.3.author" data-i18n-text="testimonials.3.text" tabindex="0" role="button" aria-label="Témoignage de Jasmin">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/jasmin testimonials.webp" alt="Jasmin" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.3.author">Jasmin</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.3.text">« Je n'avais jamais pratiqué la yoga-danse auparavant. Après quelques séances, j'ai découvert une nouvelle légèreté et le plaisir de m'exprimer librement à travers mon corps. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 4 — Keltoum -->
+        <article class="testi-card" data-avatar="Asset/keltoum testimonials.webp" data-author="Keltoum" data-i18n-author="testimonials.4.author" data-i18n-text="testimonials.4.text" tabindex="0" role="button" aria-label="Témoignage de Keltoum">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/keltoum testimonials.webp" alt="Keltoum" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.4.author">Keltoum</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.4.text">« J'ai commencé cette expérience avec beaucoup de curiosité. Petit à petit, j'apprends à prendre du temps pour moi, à ralentir et à être plus attentive à mes émotions. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 5 — Lily -->
+        <article class="testi-card" data-avatar="Asset/lily testimonials.webp" data-author="Lily" data-i18n-author="testimonials.5.author" data-i18n-text="testimonials.5.text" tabindex="0" role="button" aria-label="Témoignage de Lily">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/lily testimonials.webp" alt="Lily" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.5.author">Lily</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.5.text">« Les exercices m'invitent à mieux me connaître et à découvrir des aspects de moi que je ne prenais pas toujours le temps d'explorer. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 6 — Lina -->
+        <article class="testi-card" data-avatar="Asset/Lina testimonials.webp" data-author="Lina" data-i18n-author="testimonials.6.author" data-i18n-text="testimonials.6.text" tabindex="0" role="button" aria-label="Témoignage de Lina">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/Lina testimonials.webp" alt="Lina" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.6.author">Lina</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.6.text">« Je me sens plus à l'écoute de mon corps et de mes ressentis. Chaque séance est une occasion de me retrouver et de me reconnecter à moi-même. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 7 — Mira -->
+        <article class="testi-card" data-avatar="Asset/mira testimonials.webp" data-author="Mira" data-i18n-author="testimonials.7.author" data-i18n-text="testimonials.7.text" tabindex="0" role="button" aria-label="Témoignage de Mira">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/mira testimonials.webp" alt="Mira" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.7.author">Mira</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.7.text">« Cette expérience m'encourage à m'accorder davantage de valeur, à respecter mes besoins et à avancer avec plus de douceur envers moi-même. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+        <!-- Card 8 — Sara -->
+        <article class="testi-card" data-avatar="Asset/sara testimonials.webp" data-author="Sara" data-i18n-author="testimonials.8.author" data-i18n-text="testimonials.8.text" tabindex="0" role="button" aria-label="Témoignage de Sara">
+          <div class="testi-card__glass">
+            <div class="testi-card__header">
+              <img src="Asset/sara testimonials.webp" alt="Sara" class="testi-card__avatar" loading="lazy" width="62" height="62" />
+              <div class="testi-card__meta">
+                <cite class="testi-card__author" data-i18n="testimonials.8.author">Sara</cite>
+              </div>
+            </div>
+            <div class="testi-card__quote-icon" aria-hidden="true">
+              <svg width="22" height="18" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+            </div>
+            <blockquote class="testi-card__quote">
+              <p class="testi-card__text" data-i18n="testimonials.8.text">« J'apprécie particulièrement cette approche qui me permet d'explorer mes émotions, mon mouvement et ma féminité dans un espace où je peux évoluer à mon rythme. »</p>
+            </blockquote>
+          </div>
+        </article>
+
+      </div><!-- /.testimonials__track -->
+    </div><!-- /.testimonials__belt -->
+
+    <!-- PREMIUM TRANSPARENT POP-UP MODAL -->
+    <div class="testi-modal" id="testiModal" role="dialog" aria-modal="true" aria-labelledby="modalAuthor" hidden>
+      <div class="testi-modal__backdrop" id="testiModalBackdrop" aria-hidden="true"></div>
+      <div class="testi-modal__dialog">
+        <button type="button" class="testi-modal__close" id="testiModalClose" aria-label="Fermer le témoignage">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <!-- Centered Profile and Author in Modal -->
+        <div class="testi-modal__header">
+          <img src="" alt="" class="testi-modal__avatar" id="modalAvatar" width="84" height="84" />
+          <cite class="testi-modal__author" id="modalAuthor"></cite>
+          <div class="testi-modal__quote-icon" aria-hidden="true">
+            <svg width="28" height="22" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+          </div>
+        </div>
+        <blockquote class="testi-modal__quote">
+          <p class="testi-modal__text" id="modalText"></p>
+        </blockquote>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SECTION E — REGISTRATION FORM
+  ============================================================ -->
+  <section class="form-section" id="form">
+    <div class="form-section__container">
+
+      <div class="section-header animate-fade-up">
+        <span class="section-eyebrow" data-i18n="form.eyebrow">Accès gratuit</span>
+        <h2 class="section-title" data-i18n="form.title">Reçois ton E-book gratuitement.</h2>
+        <p class="section-subtitle" data-i18n="form.subtitle">
+          Remplis le formulaire ci-dessous pour accéder à ton guide gratuit.
+        </p>
+      </div>
+
+      <!-- REGISTRATION FORM -->
+      <form class="lead-form animate-fade-up animate-delay-1" id="leadForm" novalidate>
+
+        <!-- 1. Full Name -->
+        <div class="form-group" id="fg-name">
+          <label class="form-label" for="fullName">
+            <span data-i18n="form.nameLabel">Prénom et nom</span>
+            <span class="form-required" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            class="form-input"
+            autocomplete="name"
+            data-i18n-placeholder="form.namePlaceholder"
+            placeholder="Ton prénom et nom"
+            required
+          />
+          <span class="form-error" id="err-name" role="alert"></span>
+        </div>
+
+        <!-- 2. Phone Number -->
+        <div class="form-group" id="fg-phone">
+          <label class="form-label" for="phoneInput">
+            <span data-i18n="form.phoneLabel">Numéro de téléphone</span>
+            <span class="form-required" aria-hidden="true">*</span>
+          </label>
+          <div class="phone-field">
+            <!-- Country selector -->
+            <div class="country-selector" id="countrySelector">
+              <button type="button" class="country-selector__btn" id="countryBtn" aria-haspopup="listbox" aria-expanded="false">
+                <span class="country-selector__flag" id="selectedFlag">🇲🇦</span>
+                <span class="country-selector__code" id="selectedCode">+212</span>
+                <svg class="country-selector__chevron" width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <!-- Country Dropdown -->
+              <div class="country-dropdown" id="countryDropdown" role="dialog" aria-modal="true" aria-label="Sélectionner un pays">
+                <div class="country-search-wrap">
+                  <input
+                    type="text"
+                    class="country-search"
+                    id="countrySearch"
+                    placeholder="Rechercher un pays…"
+                    data-i18n-placeholder="form.countrySearch"
+                    autocomplete="off"
+                  />
+                </div>
+                <ul class="country-list" id="countryList" role="listbox"></ul>
+              </div>
+            </div>
+            <!-- Local number -->
+            <input
+              type="tel"
+              id="phoneInput"
+              name="phone"
+              class="form-input phone-input"
+              autocomplete="tel-national"
+              data-i18n-placeholder="form.phonePlaceholder"
+              placeholder="06 12 34 56 78"
+              required
+            />
+          </div>
+          <span class="form-error" id="err-phone" role="alert"></span>
+        </div>
+
+        <!-- 3. Email -->
+        <div class="form-group" id="fg-email">
+          <label class="form-label" for="emailInput">
+            <span data-i18n="form.emailLabel">Adresse e-mail</span>
+            <span class="form-required" aria-hidden="true">*</span>
+          </label>
+          <input
+            type="email"
+            id="emailInput"
+            name="email"
+            class="form-input"
+            autocomplete="email"
+            data-i18n-placeholder="form.emailPlaceholder"
+            placeholder="ton@email.com"
+            required
+          />
+          <span class="form-error" id="err-email" role="alert"></span>
+        </div>
+
+        <!-- 4. Interest Selection -->
+        <div class="form-group" id="fg-interest">
+          <label class="form-label" for="interestSelect">
+            <span data-i18n="form.interestLabel">Pourquoi cet E-book t'intéresse-t-il&nbsp;?</span>
+            <span class="form-required" aria-hidden="true">*</span>
+          </label>
+          <!-- Interest cards -->
+          <div class="interest-cards" id="interestCards" role="radiogroup" aria-label="Choisir un intérêt">
+            <label class="interest-card" data-value="personal-development">
+              <input type="radio" name="interest" value="personal-development" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">🌱</span>
+              <span class="interest-card__label" data-i18n="form.interest.personal">Développement personnel</span>
+            </label>
+            <label class="interest-card" data-value="body">
+              <input type="radio" name="interest" value="body" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">🌿</span>
+              <span class="interest-card__label" data-i18n="form.interest.body">Reconnexion au corps</span>
+            </label>
+            <label class="interest-card" data-value="emotions">
+              <input type="radio" name="interest" value="emotions" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">💫</span>
+              <span class="interest-card__label" data-i18n="form.interest.emotions">Comprendre mes émotions</span>
+            </label>
+            <label class="interest-card" data-value="confidence">
+              <input type="radio" name="interest" value="confidence" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">✨</span>
+              <span class="interest-card__label" data-i18n="form.interest.confidence">Confiance en soi</span>
+            </label>
+            <label class="interest-card" data-value="femininity">
+              <input type="radio" name="interest" value="femininity" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">🌸</span>
+              <span class="interest-card__label" data-i18n="form.interest.femininity">Féminité authentique</span>
+            </label>
+            <label class="interest-card" data-value="motherhood">
+              <input type="radio" name="interest" value="motherhood" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">🤱</span>
+              <span class="interest-card__label" data-i18n="form.interest.motherhood">Maternité & moi-même</span>
+            </label>
+            <label class="interest-card" data-value="other">
+              <input type="radio" name="interest" value="other" class="interest-radio" />
+              <span class="interest-card__icon" aria-hidden="true">💬</span>
+              <span class="interest-card__label" data-i18n="form.interest.other">Autre</span>
+            </label>
+          </div>
+          <span class="form-error" id="err-interest" role="alert"></span>
+        </div>
+
+        <!-- 5. Conditional Follow-up Question -->
+        <div class="form-group form-group--conditional" id="fg-followup" aria-live="polite">
+          <label class="form-label" id="followupLabel" for="followupAnswer">
+            <span id="followupQuestion"></span>
+          </label>
+          <textarea
+            id="followupAnswer"
+            name="followupAnswer"
+            class="form-input form-textarea"
+            rows="3"
+            data-i18n-placeholder="form.followupPlaceholder"
+            placeholder="Ta réponse…"
+          ></textarea>
+        </div>
+
+        <!-- 6a. Privacy consent (required) -->
+        <div class="form-group form-group--checkbox" id="fg-privacy">
+          <label class="checkbox-label">
+            <input type="checkbox" id="privacyConsent" name="privacyConsent" class="checkbox-input" required />
+            <span class="checkbox-custom" aria-hidden="true"></span>
+            <span class="checkbox-text" data-i18n="form.privacyConsent">
+              J'accepte que mes informations soient utilisées pour me faire parvenir mon E-book gratuit, conformément à la
+              <a href="#privacy" class="form-link" data-i18n="form.privacyLink">politique de confidentialité</a>.
+            </span>
+          </label>
+          <span class="form-error" id="err-privacy" role="alert"></span>
+        </div>
+
+        <!-- 6b. Marketing opt-in (optional) -->
+        <div class="form-group form-group--checkbox" id="fg-marketing">
+          <label class="checkbox-label">
+            <input type="checkbox" id="marketingConsent" name="marketingConsent" class="checkbox-input" />
+            <span class="checkbox-custom" aria-hidden="true"></span>
+            <span class="checkbox-text" data-i18n="form.marketingConsent">
+              J'accepte de recevoir des actualités et informations de Taj Al-Unutha. (Facultatif — tu peux te désabonner à tout moment.)
+            </span>
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+          <span class="btn-label" data-i18n="form.submit">Je reçois mon E-book gratuit</span>
+          <span class="btn-loading" aria-hidden="true">
+            <svg class="spinner" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" stroke-dasharray="31.416" stroke-dashoffset="10" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Form-level error message -->
+        <div class="form-global-error" id="formGlobalError" role="alert" aria-live="assertive"></div>
+
+      </form>
+
+
+      <!-- ============================================================
+           SECTION F — SUCCESS STATE
+      ============================================================ -->
+      <div class="success-section" id="successSection" aria-live="polite" hidden>
+
+        <div class="success-icon" aria-hidden="true">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 32L28 40L44 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <h2 class="success-title" data-i18n="success.title">Félicitations ! Ton guide est prêt.</h2>
+        <p class="success-message" data-i18n="success.message">
+          Merci pour ta confiance. Tu peux maintenant accéder à ton E-book gratuit.
+        </p>
+
+        <!-- E-book preview -->
+        <div class="success-ebook">
+          <img
+            src="Asset/hf_20261125_011959_311fdc53-5afe-4eb6-9cbe-daf26e9eaa80.webp"
+            alt="Couverture E-book Taj Al-Unutha"
+            class="success-ebook__img"
+            loading="lazy"
+            width="160"
+            height="230"
+          />
+        </div>
+
+        <!-- Download button — URL injected by script.js AFTER successful submission -->
+        <a href="#" class="btn btn--primary" id="downloadBtn" target="_blank" rel="noopener noreferrer" data-i18n="success.download">
+          Télécharger mon E-book
+        </a>
+
+        <!-- Optional WhatsApp contact -->
+        <a href="#" class="btn btn--whatsapp" id="whatsappBtn" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M11.998 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.954 9.954 0 0 0 12 22c5.523 0 10-4.477 10-10S17.521 2 11.998 2zm0 18.182a8.164 8.164 0 0 1-4.17-1.146l-.298-.178-3.108.733.766-3.025-.195-.311A8.168 8.168 0 0 1 3.818 12c0-4.51 3.67-8.182 8.18-8.182S20.18 7.49 20.18 12 16.51 20.182 11.998 20.182z"/>
+          </svg>
+          <span data-i18n="success.whatsapp">Contacter via WhatsApp</span>
+        </a>
+
+      </div>
+      <!-- end success-section -->
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION G — FOOTER
+  ============================================================ -->
+  <footer class="footer" id="contact">
+    <div class="footer__container">
+
+      <div class="footer__brand">
+        <!-- IMPORT YOUR LOGO HERE: replace with your logo file -->
+        <!-- <img src="Asset/logo-white.png" alt="Taj Al-Unutha" class="footer__logo-img" /> -->
+        <span class="footer__logo-text">TAJ AL-UNUTHA</span>
+        <p class="footer__tagline" data-i18n="footer.tagline">
+          Un espace de reconnexion à soi, au corps et à la féminité authentique.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <!-- Instagram -->
+        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram Taj Al-Unutha">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="footer__social-link footer__whatsapp-link" id="footerWhatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Taj Al-Unutha">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M11.998 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.954 9.954 0 0 0 12 22c5.523 0 10-4.477 10-10S17.521 2 11.998 2zm0 18.182a8.164 8.164 0 0 1-4.17-1.146l-.298-.178-3.108.733.766-3.025-.195-.311A8.168 8.168 0 0 1 3.818 12c0-4.51 3.67-8.182 8.18-8.182S20.18 7.49 20.18 12 16.51 20.182 11.998 20.182z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer__links">
+        <a href="#" class="footer__link" data-i18n="footer.privacy">Politique de confidentialité</a>
+        <span class="footer__sep" aria-hidden="true">·</span>
+        <a href="#" class="footer__link" data-i18n="footer.legal">Mentions légales</a>
+      </div>
+
+      <!-- Footer Language Selector -->
+      <div class="footer__lang">
+        <span class="footer__lang-label" data-i18n="footer.langLabel">Langue :</span>
+        <div class="lang-selector lang-selector--footer" id="langSelectorFooter">
+          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtnFooter">
+            <span class="lang-selector__flag" id="langFlagFooter">🇫🇷</span>
+            <span class="lang-selector__code" id="langCodeFooter">FR</span>
+            <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <ul class="lang-selector__dropdown lang-selector__dropdown--up" role="listbox" id="langDropdownFooter">
+            <li role="option" class="lang-option" data-lang="fr">🇫🇷 <span>Français</span></li>
+            <li role="option" class="lang-option" data-lang="ar">🇸🇦 <span>العربية</span></li>
+            <li role="option" class="lang-option" data-lang="en">🇬🇧 <span>English</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &copy; <span id="footerYear"></span> Taj Al-Unutha.
+        <span data-i18n="footer.rights">Tous droits réservés.</span>
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- Privacy policy anchor target -->
+  <div id="privacy" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
