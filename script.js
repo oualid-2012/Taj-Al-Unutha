@@ -94,7 +94,7 @@ const translations = {
     'hero.ebookPlaceholder': 'Couverture\nE-book',
     'hero.social.label':     'Restons connectés',
 
-    // Benefits
+    // Benefits (legacy keys preserved for fallback)
     'benefits.eyebrow':    'Ce que tu vas découvrir',
     'benefits.title':      'Un guide pour commencer ton chemin vers toi-même.',
     'benefits.cta':        'Accéder à l\'E-book gratuit',
@@ -105,6 +105,68 @@ const translations = {
     'benefits.card2.text':  'Apprends à mieux comprendre tes émotions. Transforme ce que tu ressens en force et en clarté.',
     'benefits.card3.title': 'L\'épanouissement personnel',
     'benefits.card3.text':  'Développe ta confiance et ton potentiel. Révèle la femme authentique que tu es.',
+
+    // Section 2 — Transformation Journey (6 expandable topics)
+    'journey.eyebrow':               'Cheminement & Transformation',
+    'journey.title':                 'Explore les étapes de ta transformation',
+    'journey.subtitle':              'Découvre le programme, les piliers et l\'accompagnement de 88 jours conçu pour révéler ta féminité authentique.',
+
+    // Topic 1
+    'journey.topic1.title':          'Bienvenue dans ton voyage de transformation',
+    'journey.topic1.content':        'Pendant 88 jours, nous traversons ensemble la rivière du changement. Ta sécurité intérieure est notre point de départ.',
+
+    // Topic 2
+    'journey.topic2.title':          'Mon expertise au service de ta transformation',
+    'journey.topic2.cat1.title':     'Coaching & accompagnement',
+    'journey.topic2.cat1.item1':     'Master Coach',
+    'journey.topic2.cat1.item2':     'Life-coaching',
+    'journey.topic2.cat1.item3':     'Burnout Coach',
+    'journey.topic2.cat1.item4':     'Confiance en soi',
+    'journey.topic2.cat1.item5':     'Transformation personnelle',
+    'journey.topic2.cat1.item6':     'Libération émotionnelle',
+    'journey.topic2.cat2.title':     'Mouvement conscient & féminité',
+    'journey.topic2.cat2.item1':     'Yoga',
+    'journey.topic2.cat2.item2':     'Danse',
+    'journey.topic2.cat2.item3':     'Bellyfit®',
+    'journey.topic2.cat2.item4':     'Maître de présence',
+    'journey.topic2.cat2.item5':     'Reconnexion au corps féminin',
+    'journey.topic2.cat3.title':     'Approches énergétiques & méditation',
+    'journey.topic2.cat3.item1':     'Maître Reiki',
+    'journey.topic2.cat3.item2':     'EFT',
+    'journey.topic2.cat3.item3':     'Sophrologie',
+    'journey.topic2.cat3.item4':     'Pratiques de pleine conscience',
+
+    // Topic 3
+    'journey.topic3.title':          'Les 3 piliers de ta transformation',
+    'journey.topic3.p1.title':       'Le corps',
+    'journey.topic3.p1.text':        'Retrouver la connexion à ton corps grâce au mouvement conscient.',
+    'journey.topic3.p2.title':       'Les émotions',
+    'journey.topic3.p2.text':        'Accueillir, comprendre et libérer les émotions qui te freinent.',
+    'journey.topic3.p3.title':       'La féminité authentique',
+    'journey.topic3.p3.text':        'Cultiver ta sécurité intérieure et incarner pleinement la femme que tu es.',
+
+    // Topic 4
+    'journey.topic4.title':          'À qui s\'adresse cette transformation ?',
+    'journey.topic4.p1':             'À toi, femme qui donnes beaucoup aux autres et qui ressens aujourd\'hui le besoin de revenir à toi.',
+    'journey.topic4.p2':             'À toi qui souhaites retrouver la connexion avec ton corps, accueillir tes émotions et révéler ta féminité authentique.',
+
+    // Topic 5
+    'journey.topic5.title':          'Le programme : Comment se déroule ta transformation en 88 jours ?',
+    'journey.topic5.s1.badge':       'Étape 01',
+    'journey.topic5.s1.title':       'Se reconnecter à son corps',
+    'journey.topic5.s1.text':        'Retrouve une connexion profonde avec ton corps grâce au mouvement conscient, à la respiration et à l\'écoute de tes sensations. Apprends à respecter ton rythme et à prendre soin de toi avec douceur.',
+    'journey.topic5.s2.badge':       'Étape 02',
+    'journey.topic5.s2.title':       'Accueillir ses émotions',
+    'journey.topic5.s2.text':        'Apprends à reconnaître, accueillir et comprendre tes émotions avec bienveillance. Grâce à la respiration, à la pleine conscience et aux pratiques de libération émotionnelle, avance vers plus de sérénité et de sécurité intérieure.',
+    'journey.topic5.s3.badge':       'Étape 03',
+    'journey.topic5.s3.title':       'Révéler sa féminité authentique',
+    'journey.topic5.s3.text':        'Reconnecte-toi à ta féminité profonde, cultive ta sécurité intérieure et libère-toi des croyances qui te limitent. À travers le mouvement, la méditation et la conscience de soi, ose incarner pleinement la femme que tu es.',
+
+    // Topic 6
+    'journey.topic6.title':          'Découvrir mon accompagnement',
+    'journey.topic6.content':        'Ce voyage de 88 jours est une invitation intime à ralentir, à te retrouver et à vivre en harmonie avec ta véritable essence. Commence dès maintenant en découvrant ton guide gratuit ou contacte directement Latifa pour échanger sur ton cheminement.',
+    'journey.topic6.ctaPrimary':     'Accéder à l\'E-book gratuit',
+    'journey.topic6.ctaWhatsapp':    'Échanger sur WhatsApp',
 
     // About
     'about.eyebrow':        'À propos',
@@ -225,7 +287,7 @@ const translations = {
     'hero.ebookPlaceholder': 'غلاف\nالكتاب الإلكتروني',
     'hero.social.label':     'لنبقَ على تواصل',
 
-    // Benefits
+    // Benefits (legacy keys preserved for fallback)
     'benefits.eyebrow':    'ما ستكتشفينه',
     'benefits.title':      'دليلك للبدء في رحلتك نحو ذاتك.',
     'benefits.cta':        'الحصول على الكتاب الإلكتروني المجاني',
@@ -236,6 +298,68 @@ const translations = {
     'benefits.card2.text':  'تعلّمي كيف تفهمين مشاعرك بشكل أعمق. حوّلي ما تشعرين به إلى قوة ووضوح.',
     'benefits.card3.title': 'الازدهار الشخصي',
     'benefits.card3.text':  'طوّري ثقتك بنفسك وإمكاناتك. اكشفي المرأة الأصيلة التي أنتِ عليها.',
+
+    // Section 2 — Transformation Journey (6 expandable topics)
+    'journey.eyebrow':               'المسار والتحول',
+    'journey.title':                 'استكشفي مراحل تحوّلكِ الداخلي',
+    'journey.subtitle':              'اكتشفي البرنامج والركائز والمرافقة المصممة خلال 88 يوماً للكشف عن أنوثتكِ الأصيلة.',
+
+    // Topic 1
+    'journey.topic1.title':          'مرحباً بكِ في رحلة تحوّلكِ',
+    'journey.topic1.content':        'على مدار 88 يوماً، نعبر معاً نهر التغيير. أمانكِ الداخلي هو نقطة انطلاقنا الأساسية.',
+
+    // Topic 2
+    'journey.topic2.title':          'خبراتي في خدمة تحوّلكِ',
+    'journey.topic2.cat1.title':     'التدريب والمرافقة',
+    'journey.topic2.cat1.item1':     'ماستر كوتش (Master Coach)',
+    'journey.topic2.cat1.item2':     'كوتشينغ الحياة (Life Coaching)',
+    'journey.topic2.cat1.item3':     'كوتش الإرهاق والاحتراق النفسي',
+    'journey.topic2.cat1.item4':     'الثقة بالنفس',
+    'journey.topic2.cat1.item5':     'التحول الشخصي',
+    'journey.topic2.cat1.item6':     'التحرر العاطفي',
+    'journey.topic2.cat2.title':     'الحركة الواعية والأنوثة',
+    'journey.topic2.cat2.item1':     'اليوغا',
+    'journey.topic2.cat2.item2':     'الرقص التعبيري',
+    'journey.topic2.cat2.item3':     'بيلي فيت® (Bellyfit®)',
+    'journey.topic2.cat2.item4':     'إتقان الحضور واليقظة الذهنية',
+    'journey.topic2.cat2.item5':     'إعادة الاتصال بالجسد الأنثوي',
+    'journey.topic2.cat3.title':     'المقاربات الطاقية والتأمل',
+    'journey.topic2.cat3.item1':     'ماستر ريكي (Reiki Master)',
+    'journey.topic2.cat3.item2':     'تقنية الحرية النفسية (EFT)',
+    'journey.topic2.cat3.item3':     'السوفرولوجيا (Sophrology)',
+    'journey.topic2.cat3.item4':     'ممارسات اليقظة الكاملة والتأمل',
+
+    // Topic 3
+    'journey.topic3.title':          'الركائز الثلاث لتحوّلكِ',
+    'journey.topic3.p1.title':       'الجسد',
+    'journey.topic3.p1.text':        'استعادة الاتصال العميق بجسدكِ من خلال الحركة الواعية.',
+    'journey.topic3.p2.title':       'المشاعر',
+    'journey.topic3.p2.text':        'احتواء وفهم وتحرير المشاعر التي تعيق تقدمكِ وتثقلكِ.',
+    'journey.topic3.p3.title':       'الأنوثة الأصيلة',
+    'journey.topic3.p3.text':        'تنمية أمانكِ الداخلي وتجسيد المرأة الحقيقية التي أنتِ عليها بكل فخر.',
+
+    // Topic 4
+    'journey.topic4.title':          'لمن تتوجه هذه الرحلة التحويلية؟',
+    'journey.topic4.p1':             'إليكِ، يا من تمنحين الكثير للآخرين وتشعرين اليوم بحاجة ملحة للعودة إلى ذاتكِ.',
+    'journey.topic4.p2':             'إليكِ، يا من ترغبين في استعادة التواصل مع جسدكِ، واحتضان مشاعركِ، وكشف أنوثتكِ الحقيقية بكل سلام.',
+
+    // Topic 5
+    'journey.topic5.title':          'البرنامج: كيف يتم تحوّلكِ في 88 يوماً؟',
+    'journey.topic5.s1.badge':       'المرحلة 01',
+    'journey.topic5.s1.title':       'إعادة الاتصال بالجسد',
+    'journey.topic5.s1.text':        'استعيدي اتصالاً عميقاً بجسدكِ من خلال الحركة الواعية والتنفس والإصغاء لأحاسيسكِ. تعلّمي احترام وتيرتكِ الخاصة والعناية بذاتكِ بكل لطف.',
+    'journey.topic5.s2.badge':       'المرحلة 02',
+    'journey.topic5.s2.title':       'احتواء المشاعر',
+    'journey.topic5.s2.text':        'تعلّمي التعرّف على مشاعركِ واحتضانها وفهمها بمحبة. بفضل التنفس واليقظة الذهنية وممارسات التحرر العاطفي، تقدمي نحو المزيد من السكينة والأمان الداخلي.',
+    'journey.topic5.s3.badge':       'المرحلة 03',
+    'journey.topic5.s3.title':       'إظهار الأنوثة الأصيلة',
+    'journey.topic5.s3.text':        'أعيدي الاتصال بأنوثتكِ العميقة، ونمّي أمانكِ الداخلي، وتحرري من المعتقدات المقيدة. من خلال الحركة والتأمل والوعي الذاتي، تجرّئي على تجسيد كامل للمرأة التي أنتِ عليها.',
+
+    // Topic 6
+    'journey.topic6.title':          'اكتشفي مرافقتي الخاصة',
+    'journey.topic6.content':        'هذه الرحلة التي تستمر 88 يوماً هي دعوة حميمة للتمهل والعودة إلى نفسكِ والعيش في انسجام تام مع جوهركِ الحقيقي. ابدئي الآن باكتشاف دليلكِ المجاني أو تواصلي مباشرة مع لطيفة للحديث حول مساركِ.',
+    'journey.topic6.ctaPrimary':     'الحصول على الكتاب المجاني',
+    'journey.topic6.ctaWhatsapp':    'تواصل عبر واتساب',
 
     // About
     'about.eyebrow':        'عن المشروع',
@@ -356,7 +480,7 @@ const translations = {
     'hero.ebookPlaceholder': 'E-book\nCover',
     'hero.social.label':     'Let\'s stay connected',
 
-    // Benefits
+    // Benefits (legacy keys preserved for fallback)
     'benefits.eyebrow':    'What you will discover',
     'benefits.title':      'A guide to begin your journey back to yourself.',
     'benefits.cta':        'Access the free E-book',
@@ -367,6 +491,68 @@ const translations = {
     'benefits.card2.text':  'Learn to better understand your emotions. Transform what you feel into strength and clarity.',
     'benefits.card3.title': 'Personal flourishing',
     'benefits.card3.text':  'Develop your confidence and potential. Reveal the authentic woman that you are.',
+
+    // Section 2 — Transformation Journey (6 expandable topics)
+    'journey.eyebrow':               'Journey & Transformation',
+    'journey.title':                 'Explore the stages of your transformation',
+    'journey.subtitle':              'Discover the 88-day program, pillars, and personalized guidance designed to reveal your authentic femininity.',
+
+    // Topic 1
+    'journey.topic1.title':          'Welcome to your transformational journey',
+    'journey.topic1.content':        'For 88 days, we cross the river of change together. Your inner safety is our starting point.',
+
+    // Topic 2
+    'journey.topic2.title':          'My expertise dedicated to your transformation',
+    'journey.topic2.cat1.title':     'Coaching & Guidance',
+    'journey.topic2.cat1.item1':     'Master Coach',
+    'journey.topic2.cat1.item2':     'Life Coaching',
+    'journey.topic2.cat1.item3':     'Burnout Coach',
+    'journey.topic2.cat1.item4':     'Self-Confidence',
+    'journey.topic2.cat1.item5':     'Personal Transformation',
+    'journey.topic2.cat1.item6':     'Emotional Release',
+    'journey.topic2.cat2.title':     'Conscious Movement & Femininity',
+    'journey.topic2.cat2.item1':     'Yoga',
+    'journey.topic2.cat2.item2':     'Dance',
+    'journey.topic2.cat2.item3':     'Bellyfit®',
+    'journey.topic2.cat2.item4':     'Presence Master',
+    'journey.topic2.cat2.item5':     'Reconnecting to the Female Body',
+    'journey.topic2.cat3.title':     'Energy Approaches & Meditation',
+    'journey.topic2.cat3.item1':     'Reiki Master',
+    'journey.topic2.cat3.item2':     'EFT',
+    'journey.topic2.cat3.item3':     'Sophrology',
+    'journey.topic2.cat3.item4':     'Mindfulness Practices',
+
+    // Topic 3
+    'journey.topic3.title':          'The 3 Pillars of your transformation',
+    'journey.topic3.p1.title':       'The Body',
+    'journey.topic3.p1.text':        'Rediscover the connection to your body through conscious movement.',
+    'journey.topic3.p2.title':       'Emotions',
+    'journey.topic3.p2.text':        'Welcome, understand, and release the emotions that hold you back.',
+    'journey.topic3.p3.title':       'Authentic Femininity',
+    'journey.topic3.p3.text':        'Cultivate your inner safety and fully embody the woman you truly are.',
+
+    // Topic 4
+    'journey.topic4.title':          'Who is this transformation for?',
+    'journey.topic4.p1':             'For you, a woman who gives so much to others and now feels the need to return to yourself.',
+    'journey.topic4.p2':             'For you, who wishes to reconnect with your body, welcome your emotions, and reveal your authentic femininity.',
+
+    // Topic 5
+    'journey.topic5.title':          'The Program: How does your 88-day transformation unfold?',
+    'journey.topic5.s1.badge':       'Stage 01',
+    'journey.topic5.s1.title':       'Reconnecting with your body',
+    'journey.topic5.s1.text':        'Rediscover a deep connection with your body through conscious movement, breathwork, and tuning into your sensations. Learn to honor your own pace and care for yourself with tenderness.',
+    'journey.topic5.s2.badge':       'Stage 02',
+    'journey.topic5.s2.title':       'Welcoming your emotions',
+    'journey.topic5.s2.text':        'Learn to recognize, welcome, and understand your emotions with kindness. Through breath, mindfulness, and emotional release practices, move toward greater serenity and inner safety.',
+    'journey.topic5.s3.badge':       'Stage 03',
+    'journey.topic5.s3.title':       'Revealing your authentic femininity',
+    'journey.topic5.s3.text':        'Reconnect with your deep femininity, nurture your inner safety, and free yourself from limiting beliefs. Through movement, meditation, and self-awareness, dare to fully embody the woman you are.',
+
+    // Topic 6
+    'journey.topic6.title':          'Discover my guidance & mentorship',
+    'journey.topic6.content':        'This 88-day journey is an intimate invitation to slow down, reconnect with yourself, and live in harmony with your true essence. Begin today by discovering your free guide, or reach out directly to Latifa to discuss your journey.',
+    'journey.topic6.ctaPrimary':     'Access the free E-book',
+    'journey.topic6.ctaWhatsapp':    'Connect on WhatsApp',
 
     // About
     'about.eyebrow':        'About',
@@ -1400,6 +1586,84 @@ function initTestimonialsCarousel() {
 }
 
 
+/* ================================================================
+   09b. EXPANDABLE JOURNEY ACCORDION (6 TOPICS)
+   - Only one panel open at a time
+   - Clicking an already-open button closes it
+   - Smooth CSS Grid 0fr -> 1fr animation
+   - Full keyboard accessibility
+================================================================ */
+function initJourneyAccordion() {
+  const accordion = document.getElementById('journeyAccordion');
+  if (!accordion) return;
+
+  const buttons = Array.from(accordion.querySelectorAll('.journey-btn'));
+
+  function closePanel(btn, panel) {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.classList.remove('is-active');
+    panel.classList.remove('is-open');
+    setTimeout(() => {
+      if (btn.getAttribute('aria-expanded') === 'false') {
+        panel.hidden = true;
+      }
+    }, 380);
+  }
+
+  function openPanel(btn, panel) {
+    panel.hidden = false;
+    void panel.offsetHeight; // trigger reflow
+    btn.setAttribute('aria-expanded', 'true');
+    btn.classList.add('is-active');
+    panel.classList.add('is-open');
+  }
+
+  buttons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      const panelId = btn.getAttribute('aria-controls');
+      const panel = document.getElementById(panelId);
+      if (!panel) return;
+
+      // Close all other panels
+      buttons.forEach(otherBtn => {
+        if (otherBtn !== btn && otherBtn.getAttribute('aria-expanded') === 'true') {
+          const otherPanelId = otherBtn.getAttribute('aria-controls');
+          const otherPanel = document.getElementById(otherPanelId);
+          if (otherPanel) closePanel(otherBtn, otherPanel);
+        }
+      });
+
+      // Toggle current panel
+      if (isExpanded) {
+        closePanel(btn, panel);
+      } else {
+        openPanel(btn, panel);
+      }
+    });
+
+    // Keyboard support: Arrow navigation
+    btn.addEventListener('keydown', e => {
+      let targetBtn = null;
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        targetBtn = buttons[(index + 1) % buttons.length];
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        targetBtn = buttons[(index - 1 + buttons.length) % buttons.length];
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        targetBtn = buttons[0];
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        targetBtn = buttons[buttons.length - 1];
+      }
+      if (targetBtn) targetBtn.focus();
+    });
+  });
+}
+
+
 function initAnimations() {
   const animatedEls = document.querySelectorAll(
     '.animate-fade-up, .animate-fade-left, .animate-fade-right'
@@ -1449,6 +1713,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. Form validation & submission
   initForm();
+
+  // 6b. Section 2 — Transformation Journey Expandable Accordion
+  initJourneyAccordion();
 
   // 7. Scroll-triggered animations
   initAnimations();

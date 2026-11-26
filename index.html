@@ -197,106 +197,362 @@
 
 
   <!-- ============================================================
-       SECTION C — E-BOOK BENEFITS
+       SECTION 2 — TAJ AL-UNUTHA: EXPANDABLE TRANSFORMATION JOURNEY
   ============================================================ -->
-  <section class="benefits" id="ebook">
-    <div class="benefits__container">
+  <section class="transformation" id="ebook" aria-label="Voyage de transformation">
+    <div class="transformation__container">
 
       <div class="section-header animate-fade-up">
-        <span class="section-eyebrow" data-i18n="benefits.eyebrow">Ce que tu vas découvrir</span>
-        <h2 class="section-title" data-i18n="benefits.title">
-          Un guide pour commencer ton chemin vers toi-même.
+        <span class="section-eyebrow" data-i18n="journey.eyebrow">Cheminement & Transformation</span>
+        <h2 class="section-title" data-i18n="journey.title">
+          Explore les étapes de ta transformation
         </h2>
+        <p class="section-subtitle" data-i18n="journey.subtitle">
+          Découvre le programme, les piliers et l'accompagnement de 88 jours conçu pour révéler ta féminité authentique.
+        </p>
       </div>
 
-      <!-- Benefits Showcase with Nature Imagery & E-Book Cover -->
-      <div class="benefits__showcase animate-fade-up">
-        <div class="benefits__showcase-media">
-          <img
-            src="Asset/sectionplay.webp"
-            alt="Élévation et reconnexion — Taj Al-Unutha"
-            class="benefits__showcase-img"
-            loading="lazy"
-            width="640"
-            height="420"
-          />
-          <div class="benefits__showcase-badge" data-i18n="benefits.showcaseBadge">Inspiration & Reconnexion</div>
+      <!-- 6 Expandable Interactive Buttons (Accordion) -->
+      <div class="journey-accordion" id="journeyAccordion">
+
+        <!-- Button 1: Bienvenue dans ton voyage de transformation -->
+        <div class="journey-item animate-fade-up animate-delay-1">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-1"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-1">
+            <span class="journey-btn__number">01</span>
+            <span class="journey-btn__title" data-i18n="journey.topic1.title">Bienvenue dans ton voyage de transformation</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-1"
+               role="region"
+               aria-labelledby="journey-btn-1"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="journey-card journey-card--welcome">
+                <div class="journey-card__accent" aria-hidden="true"></div>
+                <p class="journey-lead" data-i18n="journey.topic1.content">
+                  Pendant 88 jours, nous traversons ensemble la rivière du changement. Ta sécurité intérieure est notre point de départ.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="benefits__showcase-card">
-          <div class="benefits__ebook-preview">
-            <img
-              src="Asset/hf_20261125_011959_311fdc53-5afe-4eb6-9cbe-daf26e9eaa80.webp"
-              alt="Couverture E-book Taj Al-Unutha"
-              class="benefits__ebook-cover"
-              loading="lazy"
-              width="150"
-              height="220"
-            />
-            <div class="benefits__ebook-tag" data-i18n="hero.badge">GRATUIT</div>
-          </div>
-          <div class="benefits__showcase-info">
-            <span class="section-eyebrow" data-i18n="hero.eyebrow">E-book gratuit</span>
-            <h3 class="benefits__showcase-title" data-i18n="benefits.title">Un guide pour commencer ton chemin vers toi-même.</h3>
-            <p class="benefits__showcase-desc" data-i18n="hero.subtitle">Découvre les clés pour mieux te connaître, comprendre tes émotions et révéler ton potentiel.</p>
-            <a href="#form" class="btn btn--primary" data-i18n="benefits.cta">Accéder à l'E-book gratuit</a>
+
+        <!-- Button 2: Mon expertise au service de ta transformation -->
+        <div class="journey-item animate-fade-up animate-delay-2">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-2"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-2">
+            <span class="journey-btn__number">02</span>
+            <span class="journey-btn__title" data-i18n="journey.topic2.title">Mon expertise au service de ta transformation</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-2"
+               role="region"
+               aria-labelledby="journey-btn-2"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="expertise-grid">
+
+                <!-- Category 1: Coaching & accompagnement -->
+                <div class="expertise-card">
+                  <div class="expertise-card__header">
+                    <span class="expertise-card__icon" aria-hidden="true">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                      </svg>
+                    </span>
+                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat1.title">Coaching & accompagnement</h3>
+                  </div>
+                  <ul class="expertise-card__list">
+                    <li data-i18n="journey.topic2.cat1.item1">Master Coach</li>
+                    <li data-i18n="journey.topic2.cat1.item2">Life-coaching</li>
+                    <li data-i18n="journey.topic2.cat1.item3">Burnout Coach</li>
+                    <li data-i18n="journey.topic2.cat1.item4">Confiance en soi</li>
+                    <li data-i18n="journey.topic2.cat1.item5">Transformation personnelle</li>
+                    <li data-i18n="journey.topic2.cat1.item6">Libération émotionnelle</li>
+                  </ul>
+                </div>
+
+                <!-- Category 2: Mouvement conscient & féminité -->
+                <div class="expertise-card">
+                  <div class="expertise-card__header">
+                    <span class="expertise-card__icon" aria-hidden="true">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3c-1.5 3-4 6-8 7 3.5 1.5 6 4 7 8 1-4 3.5-6.5 7-8-4-1-6.5-4-8-7z"></path>
+                      </svg>
+                    </span>
+                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat2.title">Mouvement conscient & féminité</h3>
+                  </div>
+                  <ul class="expertise-card__list">
+                    <li data-i18n="journey.topic2.cat2.item1">Yoga</li>
+                    <li data-i18n="journey.topic2.cat2.item2">Danse</li>
+                    <li data-i18n="journey.topic2.cat2.item3">Bellyfit®</li>
+                    <li data-i18n="journey.topic2.cat2.item4">Maître de présence</li>
+                    <li data-i18n="journey.topic2.cat2.item5">Reconnexion au corps féminin</li>
+                  </ul>
+                </div>
+
+                <!-- Category 3: Approches énergétiques & méditation -->
+                <div class="expertise-card">
+                  <div class="expertise-card__header">
+                    <span class="expertise-card__icon" aria-hidden="true">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                      </svg>
+                    </span>
+                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat3.title">Approches énergétiques & méditation</h3>
+                  </div>
+                  <ul class="expertise-card__list">
+                    <li data-i18n="journey.topic2.cat3.item1">Maître Reiki</li>
+                    <li data-i18n="journey.topic2.cat3.item2">EFT</li>
+                    <li data-i18n="journey.topic2.cat3.item3">Sophrologie</li>
+                    <li data-i18n="journey.topic2.cat3.item4">Pratiques de pleine conscience</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="benefits__grid">
+        <!-- Button 3: Les 3 piliers de ta transformation -->
+        <div class="journey-item animate-fade-up animate-delay-3">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-3"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-3">
+            <span class="journey-btn__number">03</span>
+            <span class="journey-btn__title" data-i18n="journey.topic3.title">Les 3 piliers de ta transformation</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-3"
+               role="region"
+               aria-labelledby="journey-btn-3"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="pillars-grid">
 
-        <!-- Card 1 -->
-        <article class="benefit-card animate-fade-up animate-delay-1">
-          <div class="benefit-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M8 24c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+                <!-- Pillar 1: Le corps -->
+                <div class="pillar-card">
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="7" r="4"></circle>
+                      <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"></path>
+                    </svg>
+                  </div>
+                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p1.title">Le corps</h3>
+                  <p class="pillar-card__text" data-i18n="journey.topic3.p1.text">
+                    Retrouver la connexion à ton corps grâce au mouvement conscient.
+                  </p>
+                </div>
+
+                <!-- Pillar 2: Les émotions -->
+                <div class="pillar-card">
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p2.title">Les émotions</h3>
+                  <p class="pillar-card__text" data-i18n="journey.topic3.p2.text">
+                    Accueillir, comprendre et libérer les émotions qui te freinent.
+                  </p>
+                </div>
+
+                <!-- Pillar 3: La féminité authentique -->
+                <div class="pillar-card">
+                  <div class="pillar-card__icon" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p3.title">La féminité authentique</h3>
+                  <p class="pillar-card__text" data-i18n="journey.topic3.p3.text">
+                    Cultiver ta sécurité intérieure et incarner pleinement la femme que tu es.
+                  </p>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <h3 class="benefit-card__title" data-i18n="benefits.card1.title">Le corps</h3>
-          <p class="benefit-card__text" data-i18n="benefits.card1.text">
-            Reconnecte-toi à tes sensations. Apprends à habiter ton corps avec douceur et bienveillance.
-          </p>
-        </article>
+        </div>
 
-        <!-- Card 2 -->
-        <article class="benefit-card animate-fade-up animate-delay-2">
-          <div class="benefit-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4z" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M12 14c0-1.105.895-2 2-2h4c1.105 0 2 .895 2 2v2c0 1.105-.895 2-2 2h-4c-1.105 0-2-.895-2-2v-2z" stroke="currentColor" stroke-width="1.5"/>
-              <path d="M16 18v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+        <!-- Button 4: À qui s'adresse cette transformation ? -->
+        <div class="journey-item animate-fade-up animate-delay-1">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-4"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-4">
+            <span class="journey-btn__number">04</span>
+            <span class="journey-btn__title" data-i18n="journey.topic4.title">À qui s'adresse cette transformation ?</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-4"
+               role="region"
+               aria-labelledby="journey-btn-4"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="audience-grid">
+
+                <div class="audience-card">
+                  <div class="audience-card__bullet" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <p class="audience-card__text" data-i18n="journey.topic4.p1">
+                    À toi, femme qui donnes beaucoup aux autres et qui ressens aujourd'hui le besoin de revenir à toi.
+                  </p>
+                </div>
+
+                <div class="audience-card">
+                  <div class="audience-card__bullet" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <p class="audience-card__text" data-i18n="journey.topic4.p2">
+                    À toi qui souhaites retrouver la connexion avec ton corps, accueillir tes émotions et révéler ta féminité authentique.
+                  </p>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <h3 class="benefit-card__title" data-i18n="benefits.card2.title">Les émotions</h3>
-          <p class="benefit-card__text" data-i18n="benefits.card2.text">
-            Apprends à mieux comprendre tes émotions. Transforme ce que tu ressens en force et en clarté.
-          </p>
-        </article>
+        </div>
 
-        <!-- Card 3 -->
-        <article class="benefit-card animate-fade-up animate-delay-3">
-          <div class="benefit-card__icon" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 4L18.4 10.8L26 11.6L20.5 16.6L22.3 24L16 20.4L9.7 24L11.5 16.6L6 11.6L13.6 10.8L16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            </svg>
+        <!-- Button 5: Le programme : Comment se déroule ta transformation en 88 jours ? -->
+        <div class="journey-item animate-fade-up animate-delay-2">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-5"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-5">
+            <span class="journey-btn__number">05</span>
+            <span class="journey-btn__title" data-i18n="journey.topic5.title">Le programme : Comment se déroule ta transformation en 88 jours ?</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-5"
+               role="region"
+               aria-labelledby="journey-btn-5"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="stages-grid">
+
+                <!-- Stage 1 -->
+                <div class="stage-card">
+                  <div class="stage-card__badge" data-i18n="journey.topic5.s1.badge">Étape 01</div>
+                  <h3 class="stage-card__title" data-i18n="journey.topic5.s1.title">Se reconnecter à son corps</h3>
+                  <p class="stage-card__text" data-i18n="journey.topic5.s1.text">
+                    Retrouve une connexion profonde avec ton corps grâce au mouvement conscient, à la respiration et à l'écoute de tes sensations. Apprends à respecter ton rythme et à prendre soin de toi avec douceur.
+                  </p>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="stage-card">
+                  <div class="stage-card__badge" data-i18n="journey.topic5.s2.badge">Étape 02</div>
+                  <h3 class="stage-card__title" data-i18n="journey.topic5.s2.title">Accueillir ses émotions</h3>
+                  <p class="stage-card__text" data-i18n="journey.topic5.s2.text">
+                    Apprends à reconnaître, accueillir et comprendre tes émotions avec bienveillance. Grâce à la respiration, à la pleine conscience et aux pratiques de libération émotionnelle, avance vers plus de sérénité et de sécurité intérieure.
+                  </p>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="stage-card">
+                  <div class="stage-card__badge" data-i18n="journey.topic5.s3.badge">Étape 03</div>
+                  <h3 class="stage-card__title" data-i18n="journey.topic5.s3.title">Révéler sa féminité authentique</h3>
+                  <p class="stage-card__text" data-i18n="journey.topic5.s3.text">
+                    Reconnecte-toi à ta féminité profonde, cultive ta sécurité intérieure et libère-toi des croyances qui te limitent. À travers le mouvement, la méditation et la conscience de soi, ose incarner pleinement la femme que tu es.
+                  </p>
+                </div>
+
+              </div>
+            </div>
           </div>
-          <h3 class="benefit-card__title" data-i18n="benefits.card3.title">L'épanouissement personnel</h3>
-          <p class="benefit-card__text" data-i18n="benefits.card3.text">
-            Développe ta confiance et ton potentiel. Révèle la femme authentique que tu es.
-          </p>
-        </article>
+        </div>
 
-      </div>
+        <!-- Button 6: Découvrir mon accompagnement -->
+        <div class="journey-item animate-fade-up animate-delay-3">
+          <button type="button"
+                  class="journey-btn"
+                  id="journey-btn-6"
+                  aria-expanded="false"
+                  aria-controls="journey-panel-6">
+            <span class="journey-btn__number">06</span>
+            <span class="journey-btn__title" data-i18n="journey.topic6.title">Découvrir mon accompagnement</span>
+            <span class="journey-btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="journey-panel"
+               id="journey-panel-6"
+               role="region"
+               aria-labelledby="journey-btn-6"
+               hidden>
+            <div class="journey-panel__inner">
+              <div class="invitation-card">
+                <p class="invitation-card__lead" data-i18n="journey.topic6.content">
+                  Ce voyage de 88 jours est une invitation intime à ralentir, à te retrouver et à vivre en harmonie avec ta véritable essence. Commence dès maintenant en découvrant ton guide gratuit ou contacte directement Latifa pour échanger sur ton cheminement.
+                </p>
+                <div class="invitation-card__actions">
+                  <a href="#form" class="btn btn--primary" data-i18n="journey.topic6.ctaPrimary">
+                    Accéder à l'E-book gratuit
+                  </a>
+                  <a href="https://wa.me/32485075219"
+                     class="btn btn--outline invitation-card__whatsapp-btn"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     data-i18n="journey.topic6.ctaWhatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+                    </svg>
+                    <span>Échanger sur WhatsApp</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!-- Secondary CTA -->
-      <div class="benefits__cta animate-fade-up">
-        <a href="#form" class="btn btn--secondary" data-i18n="benefits.cta">
-          Accéder à l'E-book gratuit
-        </a>
-      </div>
+      </div><!-- /.journey-accordion -->
 
-    </div>
+    </div><!-- /.transformation__container -->
   </section>
 
 
