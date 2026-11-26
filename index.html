@@ -212,15 +212,15 @@
         </p>
       </div>
 
-      <!-- 6 Expandable Interactive Buttons (Accordion) -->
+      <!-- 6 Expandable Interactive Buttons (Accordion with Assets) -->
       <div class="journey-accordion" id="journeyAccordion">
 
         <!-- Button 1: Bienvenue dans ton voyage de transformation -->
         <div class="journey-item animate-fade-up animate-delay-1">
           <button type="button"
-                  class="journey-btn"
+                  class="journey-btn is-active"
                   id="journey-btn-1"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="journey-panel-1">
             <span class="journey-btn__number">01</span>
             <span class="journey-btn__title" data-i18n="journey.topic1.title">Bienvenue dans ton voyage de transformation</span>
@@ -230,17 +230,31 @@
               </svg>
             </span>
           </button>
-          <div class="journey-panel"
+          <div class="journey-panel is-open"
                id="journey-panel-1"
                role="region"
-               aria-labelledby="journey-btn-1"
-               hidden>
+               aria-labelledby="journey-btn-1">
             <div class="journey-panel__inner">
-              <div class="journey-card journey-card--welcome">
-                <div class="journey-card__accent" aria-hidden="true"></div>
-                <p class="journey-lead" data-i18n="journey.topic1.content">
-                  Pendant 88 jours, nous traversons ensemble la rivière du changement. Ta sécurité intérieure est notre point de départ.
-                </p>
+              <div class="journey-layout">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-path.webp" alt="Voyage de transformation — Taj Al-Unutha" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic1.badge">Le Début du Voyage</div>
+                  </div>
+                </div>
+                <div class="journey-layout__content">
+                  <div class="journey-card journey-card--welcome">
+                    <div class="journey-quote-mark" aria-hidden="true">
+                      <svg width="26" height="22" viewBox="0 0 28 24" fill="currentColor"><path d="M7.8 0C3.5 0 0 3.6 0 8c0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L3.4 24C8.6 21.2 12 15.6 12 9.2 12 4.1 10.1 0 7.8 0zm15.6 0c-4.3 0-7.8 3.6-7.8 8 0 4.2 3.1 7.6 7.2 7.9-.7 2.6-2.5 5.2-5.4 6.7L19 24c5.2-2.8 8.6-8.4 8.6-14.8 0-5.1-1.9-9.2-4.2-9.2z"/></svg>
+                    </div>
+                    <p class="journey-lead" data-i18n="journey.topic1.content">
+                      Pendant 88 jours, nous traversons ensemble la rivière du changement. Ta sécurité intérieure est notre point de départ.
+                    </p>
+                    <p class="journey-subnote" data-i18n="journey.topic1.subnote">
+                      Un accompagnement pas à pas, à ton rythme, dans la douceur et la bienveillance.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -264,69 +278,78 @@
           <div class="journey-panel"
                id="journey-panel-2"
                role="region"
-               aria-labelledby="journey-btn-2"
-               hidden>
+               aria-labelledby="journey-btn-2">
             <div class="journey-panel__inner">
-              <div class="expertise-grid">
-
-                <!-- Category 1: Coaching & accompagnement -->
-                <div class="expertise-card">
-                  <div class="expertise-card__header">
-                    <span class="expertise-card__icon" aria-hidden="true">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                      </svg>
-                    </span>
-                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat1.title">Coaching & accompagnement</h3>
+              <div class="journey-layout journey-layout--expertise">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-coaching.webp" alt="Séance d'accompagnement — Latifa Taj Al-Unutha" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic2.badge">Accompagnement & Présence</div>
                   </div>
-                  <ul class="expertise-card__list">
-                    <li data-i18n="journey.topic2.cat1.item1">Master Coach</li>
-                    <li data-i18n="journey.topic2.cat1.item2">Life-coaching</li>
-                    <li data-i18n="journey.topic2.cat1.item3">Burnout Coach</li>
-                    <li data-i18n="journey.topic2.cat1.item4">Confiance en soi</li>
-                    <li data-i18n="journey.topic2.cat1.item5">Transformation personnelle</li>
-                    <li data-i18n="journey.topic2.cat1.item6">Libération émotionnelle</li>
-                  </ul>
                 </div>
+                <div class="journey-layout__content">
+                  <div class="expertise-grid">
 
-                <!-- Category 2: Mouvement conscient & féminité -->
-                <div class="expertise-card">
-                  <div class="expertise-card__header">
-                    <span class="expertise-card__icon" aria-hidden="true">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 3c-1.5 3-4 6-8 7 3.5 1.5 6 4 7 8 1-4 3.5-6.5 7-8-4-1-6.5-4-8-7z"></path>
-                      </svg>
-                    </span>
-                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat2.title">Mouvement conscient & féminité</h3>
+                    <!-- Category 1: Coaching & accompagnement -->
+                    <div class="expertise-card">
+                      <div class="expertise-card__header">
+                        <span class="expertise-card__icon" aria-hidden="true">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                          </svg>
+                        </span>
+                        <h3 class="expertise-card__title" data-i18n="journey.topic2.cat1.title">Coaching & accompagnement</h3>
+                      </div>
+                      <ul class="expertise-card__list">
+                        <li data-i18n="journey.topic2.cat1.item1">Master Coach</li>
+                        <li data-i18n="journey.topic2.cat1.item2">Life-coaching</li>
+                        <li data-i18n="journey.topic2.cat1.item3">Burnout Coach</li>
+                        <li data-i18n="journey.topic2.cat1.item4">Confiance en soi</li>
+                        <li data-i18n="journey.topic2.cat1.item5">Transformation personnelle</li>
+                        <li data-i18n="journey.topic2.cat1.item6">Libération émotionnelle</li>
+                      </ul>
+                    </div>
+
+                    <!-- Category 2: Mouvement conscient & féminité -->
+                    <div class="expertise-card">
+                      <div class="expertise-card__header">
+                        <span class="expertise-card__icon" aria-hidden="true">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3c-1.5 3-4 6-8 7 3.5 1.5 6 4 7 8 1-4 3.5-6.5 7-8-4-1-6.5-4-8-7z"></path>
+                          </svg>
+                        </span>
+                        <h3 class="expertise-card__title" data-i18n="journey.topic2.cat2.title">Mouvement conscient & féminité</h3>
+                      </div>
+                      <ul class="expertise-card__list">
+                        <li data-i18n="journey.topic2.cat2.item1">Yoga</li>
+                        <li data-i18n="journey.topic2.cat2.item2">Danse</li>
+                        <li data-i18n="journey.topic2.cat2.item3">Bellyfit®</li>
+                        <li data-i18n="journey.topic2.cat2.item4">Maître de présence</li>
+                        <li data-i18n="journey.topic2.cat2.item5">Reconnexion au corps féminin</li>
+                      </ul>
+                    </div>
+
+                    <!-- Category 3: Approches énergétiques & méditation -->
+                    <div class="expertise-card">
+                      <div class="expertise-card__header">
+                        <span class="expertise-card__icon" aria-hidden="true">
+                          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                          </svg>
+                        </span>
+                        <h3 class="expertise-card__title" data-i18n="journey.topic2.cat3.title">Approches énergétiques & méditation</h3>
+                      </div>
+                      <ul class="expertise-card__list">
+                        <li data-i18n="journey.topic2.cat3.item1">Maître Reiki</li>
+                        <li data-i18n="journey.topic2.cat3.item2">EFT</li>
+                        <li data-i18n="journey.topic2.cat3.item3">Sophrologie</li>
+                        <li data-i18n="journey.topic2.cat3.item4">Pratiques de pleine conscience</li>
+                      </ul>
+                    </div>
+
                   </div>
-                  <ul class="expertise-card__list">
-                    <li data-i18n="journey.topic2.cat2.item1">Yoga</li>
-                    <li data-i18n="journey.topic2.cat2.item2">Danse</li>
-                    <li data-i18n="journey.topic2.cat2.item3">Bellyfit®</li>
-                    <li data-i18n="journey.topic2.cat2.item4">Maître de présence</li>
-                    <li data-i18n="journey.topic2.cat2.item5">Reconnexion au corps féminin</li>
-                  </ul>
                 </div>
-
-                <!-- Category 3: Approches énergétiques & méditation -->
-                <div class="expertise-card">
-                  <div class="expertise-card__header">
-                    <span class="expertise-card__icon" aria-hidden="true">
-                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-                      </svg>
-                    </span>
-                    <h3 class="expertise-card__title" data-i18n="journey.topic2.cat3.title">Approches énergétiques & méditation</h3>
-                  </div>
-                  <ul class="expertise-card__list">
-                    <li data-i18n="journey.topic2.cat3.item1">Maître Reiki</li>
-                    <li data-i18n="journey.topic2.cat3.item2">EFT</li>
-                    <li data-i18n="journey.topic2.cat3.item3">Sophrologie</li>
-                    <li data-i18n="journey.topic2.cat3.item4">Pratiques de pleine conscience</li>
-                  </ul>
-                </div>
-
               </div>
             </div>
           </div>
@@ -350,51 +373,60 @@
           <div class="journey-panel"
                id="journey-panel-3"
                role="region"
-               aria-labelledby="journey-btn-3"
-               hidden>
+               aria-labelledby="journey-btn-3">
             <div class="journey-panel__inner">
-              <div class="pillars-grid">
-
-                <!-- Pillar 1: Le corps -->
-                <div class="pillar-card">
-                  <div class="pillar-card__icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="7" r="4"></circle>
-                      <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"></path>
-                    </svg>
+              <div class="journey-layout journey-layout--pillars">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-stretch.webp" alt="Reconnexion au corps et épanouissement" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic3.badge">Les Fondations</div>
                   </div>
-                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p1.title">Le corps</h3>
-                  <p class="pillar-card__text" data-i18n="journey.topic3.p1.text">
-                    Retrouver la connexion à ton corps grâce au mouvement conscient.
-                  </p>
                 </div>
+                <div class="journey-layout__content">
+                  <div class="pillars-grid">
 
-                <!-- Pillar 2: Les émotions -->
-                <div class="pillar-card">
-                  <div class="pillar-card__icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                    </svg>
+                    <!-- Pillar 1: Le corps -->
+                    <div class="pillar-card">
+                      <div class="pillar-card__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="7" r="4"></circle>
+                          <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"></path>
+                        </svg>
+                      </div>
+                      <h3 class="pillar-card__title" data-i18n="journey.topic3.p1.title">Le corps</h3>
+                      <p class="pillar-card__text" data-i18n="journey.topic3.p1.text">
+                        Retrouver la connexion à ton corps grâce au mouvement conscient.
+                      </p>
+                    </div>
+
+                    <!-- Pillar 2: Les émotions -->
+                    <div class="pillar-card">
+                      <div class="pillar-card__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                      </div>
+                      <h3 class="pillar-card__title" data-i18n="journey.topic3.p2.title">Les émotions</h3>
+                      <p class="pillar-card__text" data-i18n="journey.topic3.p2.text">
+                        Accueillir, comprendre et libérer les émotions qui te freinent.
+                      </p>
+                    </div>
+
+                    <!-- Pillar 3: La féminité authentique -->
+                    <div class="pillar-card">
+                      <div class="pillar-card__icon" aria-hidden="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                      </div>
+                      <h3 class="pillar-card__title" data-i18n="journey.topic3.p3.title">La féminité authentique</h3>
+                      <p class="pillar-card__text" data-i18n="journey.topic3.p3.text">
+                        Cultiver ta sécurité intérieure et incarner pleinement la femme que tu es.
+                      </p>
+                    </div>
+
                   </div>
-                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p2.title">Les émotions</h3>
-                  <p class="pillar-card__text" data-i18n="journey.topic3.p2.text">
-                    Accueillir, comprendre et libérer les émotions qui te freinent.
-                  </p>
                 </div>
-
-                <!-- Pillar 3: La féminité authentique -->
-                <div class="pillar-card">
-                  <div class="pillar-card__icon" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                    </svg>
-                  </div>
-                  <h3 class="pillar-card__title" data-i18n="journey.topic3.p3.title">La féminité authentique</h3>
-                  <p class="pillar-card__text" data-i18n="journey.topic3.p3.text">
-                    Cultiver ta sécurité intérieure et incarner pleinement la femme que tu es.
-                  </p>
-                </div>
-
               </div>
             </div>
           </div>
@@ -418,33 +450,42 @@
           <div class="journey-panel"
                id="journey-panel-4"
                role="region"
-               aria-labelledby="journey-btn-4"
-               hidden>
+               aria-labelledby="journey-btn-4">
             <div class="journey-panel__inner">
-              <div class="audience-grid">
-
-                <div class="audience-card">
-                  <div class="audience-card__bullet" aria-hidden="true">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+              <div class="journey-layout">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-peace.webp" alt="Prendre du temps pour soi" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic4.badge">Revenir à Soi</div>
                   </div>
-                  <p class="audience-card__text" data-i18n="journey.topic4.p1">
-                    À toi, femme qui donnes beaucoup aux autres et qui ressens aujourd'hui le besoin de revenir à toi.
-                  </p>
                 </div>
+                <div class="journey-layout__content">
+                  <div class="audience-grid">
 
-                <div class="audience-card">
-                  <div class="audience-card__bullet" aria-hidden="true">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
+                    <div class="audience-card">
+                      <div class="audience-card__bullet" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </div>
+                      <p class="audience-card__text" data-i18n="journey.topic4.p1">
+                        À toi, femme qui donnes beaucoup aux autres et qui ressens aujourd'hui le besoin de revenir à toi.
+                      </p>
+                    </div>
+
+                    <div class="audience-card">
+                      <div class="audience-card__bullet" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </div>
+                      <p class="audience-card__text" data-i18n="journey.topic4.p2">
+                        À toi qui souhaites retrouver la connexion avec ton corps, accueillir tes émotions et révéler ta féminité authentique.
+                      </p>
+                    </div>
+
                   </div>
-                  <p class="audience-card__text" data-i18n="journey.topic4.p2">
-                    À toi qui souhaites retrouver la connexion avec ton corps, accueillir tes émotions et révéler ta féminité authentique.
-                  </p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -468,38 +509,47 @@
           <div class="journey-panel"
                id="journey-panel-5"
                role="region"
-               aria-labelledby="journey-btn-5"
-               hidden>
+               aria-labelledby="journey-btn-5">
             <div class="journey-panel__inner">
-              <div class="stages-grid">
-
-                <!-- Stage 1 -->
-                <div class="stage-card">
-                  <div class="stage-card__badge" data-i18n="journey.topic5.s1.badge">Étape 01</div>
-                  <h3 class="stage-card__title" data-i18n="journey.topic5.s1.title">Se reconnecter à son corps</h3>
-                  <p class="stage-card__text" data-i18n="journey.topic5.s1.text">
-                    Retrouve une connexion profonde avec ton corps grâce au mouvement conscient, à la respiration et à l'écoute de tes sensations. Apprends à respecter ton rythme et à prendre soin de toi avec douceur.
-                  </p>
+              <div class="journey-layout journey-layout--stages">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-yoga.webp" alt="Pratique de reconnexion et mouvement conscient" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic5.badge">Programme 88 Jours</div>
+                  </div>
                 </div>
+                <div class="journey-layout__content">
+                  <div class="stages-grid">
 
-                <!-- Stage 2 -->
-                <div class="stage-card">
-                  <div class="stage-card__badge" data-i18n="journey.topic5.s2.badge">Étape 02</div>
-                  <h3 class="stage-card__title" data-i18n="journey.topic5.s2.title">Accueillir ses émotions</h3>
-                  <p class="stage-card__text" data-i18n="journey.topic5.s2.text">
-                    Apprends à reconnaître, accueillir et comprendre tes émotions avec bienveillance. Grâce à la respiration, à la pleine conscience et aux pratiques de libération émotionnelle, avance vers plus de sérénité et de sécurité intérieure.
-                  </p>
+                    <!-- Stage 1 -->
+                    <div class="stage-card">
+                      <div class="stage-card__badge" data-i18n="journey.topic5.s1.badge">Étape 01</div>
+                      <h3 class="stage-card__title" data-i18n="journey.topic5.s1.title">Se reconnecter à son corps</h3>
+                      <p class="stage-card__text" data-i18n="journey.topic5.s1.text">
+                        Retrouve une connexion profonde avec ton corps grâce au mouvement conscient, à la respiration et à l'écoute de tes sensations. Apprends à respecter ton rythme et à prendre soin de toi avec douceur.
+                      </p>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <div class="stage-card">
+                      <div class="stage-card__badge" data-i18n="journey.topic5.s2.badge">Étape 02</div>
+                      <h3 class="stage-card__title" data-i18n="journey.topic5.s2.title">Accueillir ses émotions</h3>
+                      <p class="stage-card__text" data-i18n="journey.topic5.s2.text">
+                        Apprends à reconnaître, accueillir et comprendre tes émotions avec bienveillance. Grâce à la respiration, à la pleine conscience et aux pratiques de libération émotionnelle, avance vers plus de sérénité et de sécurité intérieure.
+                      </p>
+                    </div>
+
+                    <!-- Stage 3 -->
+                    <div class="stage-card">
+                      <div class="stage-card__badge" data-i18n="journey.topic5.s3.badge">Étape 03</div>
+                      <h3 class="stage-card__title" data-i18n="journey.topic5.s3.title">Révéler sa féminité authentique</h3>
+                      <p class="stage-card__text" data-i18n="journey.topic5.s3.text">
+                        Reconnecte-toi à ta féminité profonde, cultive ta sécurité intérieure et libère-toi des croyances qui te limitent. À travers le mouvement, la méditation et la conscience de soi, ose incarner pleinement la femme que tu es.
+                      </p>
+                    </div>
+
+                  </div>
                 </div>
-
-                <!-- Stage 3 -->
-                <div class="stage-card">
-                  <div class="stage-card__badge" data-i18n="journey.topic5.s3.badge">Étape 03</div>
-                  <h3 class="stage-card__title" data-i18n="journey.topic5.s3.title">Révéler sa féminité authentique</h3>
-                  <p class="stage-card__text" data-i18n="journey.topic5.s3.text">
-                    Reconnecte-toi à ta féminité profonde, cultive ta sécurité intérieure et libère-toi des croyances qui te limitent. À travers le mouvement, la méditation et la conscience de soi, ose incarner pleinement la femme que tu es.
-                  </p>
-                </div>
-
               </div>
             </div>
           </div>
@@ -523,27 +573,36 @@
           <div class="journey-panel"
                id="journey-panel-6"
                role="region"
-               aria-labelledby="journey-btn-6"
-               hidden>
+               aria-labelledby="journey-btn-6">
             <div class="journey-panel__inner">
-              <div class="invitation-card">
-                <p class="invitation-card__lead" data-i18n="journey.topic6.content">
-                  Ce voyage de 88 jours est une invitation intime à ralentir, à te retrouver et à vivre en harmonie avec ta véritable essence. Commence dès maintenant en découvrant ton guide gratuit ou contacte directement Latifa pour échanger sur ton cheminement.
-                </p>
-                <div class="invitation-card__actions">
-                  <a href="#form" class="btn btn--primary" data-i18n="journey.topic6.ctaPrimary">
-                    Accéder à l'E-book gratuit
-                  </a>
-                  <a href="https://wa.me/32485075219"
-                     class="btn btn--outline invitation-card__whatsapp-btn"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     data-i18n="journey.topic6.ctaWhatsapp">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
-                    </svg>
-                    <span>Échanger sur WhatsApp</span>
-                  </a>
+              <div class="journey-layout">
+                <div class="journey-layout__media">
+                  <div class="journey-media-frame">
+                    <img src="Asset/journey-freedom.webp" alt="Épanouissement et féminité authentique" class="journey-media-img" loading="lazy" width="500" height="400">
+                    <div class="journey-media-badge" data-i18n="journey.topic6.badge">Rayonnement & Sérénité</div>
+                  </div>
+                </div>
+                <div class="journey-layout__content">
+                  <div class="invitation-card">
+                    <p class="invitation-card__lead" data-i18n="journey.topic6.content">
+                      Ce voyage de 88 jours est une invitation intime à ralentir, à te retrouver et à vivre en harmonie avec ta véritable essence. Commence dès maintenant en découvrant ton guide gratuit ou contacte directement Latifa pour échanger sur ton cheminement.
+                    </p>
+                    <div class="invitation-card__actions">
+                      <a href="#form" class="btn btn--primary" data-i18n="journey.topic6.ctaPrimary">
+                        Accéder à l'E-book gratuit
+                      </a>
+                      <a href="https://wa.me/32485075219"
+                         class="btn btn--outline invitation-card__whatsapp-btn"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         data-i18n="journey.topic6.ctaWhatsapp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                          <path d="M12 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+                        </svg>
+                        <span>Échanger sur WhatsApp</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

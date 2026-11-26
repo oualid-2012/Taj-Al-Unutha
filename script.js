@@ -113,10 +113,13 @@ const translations = {
 
     // Topic 1
     'journey.topic1.title':          'Bienvenue dans ton voyage de transformation',
+    'journey.topic1.badge':          'Le Début du Voyage',
     'journey.topic1.content':        'Pendant 88 jours, nous traversons ensemble la rivière du changement. Ta sécurité intérieure est notre point de départ.',
+    'journey.topic1.subnote':        'Un accompagnement pas à pas, à ton rythme, dans la douceur et la bienveillance.',
 
     // Topic 2
     'journey.topic2.title':          'Mon expertise au service de ta transformation',
+    'journey.topic2.badge':          'Accompagnement & Présence',
     'journey.topic2.cat1.title':     'Coaching & accompagnement',
     'journey.topic2.cat1.item1':     'Master Coach',
     'journey.topic2.cat1.item2':     'Life-coaching',
@@ -138,6 +141,7 @@ const translations = {
 
     // Topic 3
     'journey.topic3.title':          'Les 3 piliers de ta transformation',
+    'journey.topic3.badge':          'Les Fondations',
     'journey.topic3.p1.title':       'Le corps',
     'journey.topic3.p1.text':        'Retrouver la connexion à ton corps grâce au mouvement conscient.',
     'journey.topic3.p2.title':       'Les émotions',
@@ -147,11 +151,13 @@ const translations = {
 
     // Topic 4
     'journey.topic4.title':          'À qui s\'adresse cette transformation ?',
+    'journey.topic4.badge':          'Revenir à Soi',
     'journey.topic4.p1':             'À toi, femme qui donnes beaucoup aux autres et qui ressens aujourd\'hui le besoin de revenir à toi.',
     'journey.topic4.p2':             'À toi qui souhaites retrouver la connexion avec ton corps, accueillir tes émotions et révéler ta féminité authentique.',
 
     // Topic 5
     'journey.topic5.title':          'Le programme : Comment se déroule ta transformation en 88 jours ?',
+    'journey.topic5.badge':          'Programme 88 Jours',
     'journey.topic5.s1.badge':       'Étape 01',
     'journey.topic5.s1.title':       'Se reconnecter à son corps',
     'journey.topic5.s1.text':        'Retrouve une connexion profonde avec ton corps grâce au mouvement conscient, à la respiration et à l\'écoute de tes sensations. Apprends à respecter ton rythme et à prendre soin de toi avec douceur.',
@@ -164,6 +170,7 @@ const translations = {
 
     // Topic 6
     'journey.topic6.title':          'Découvrir mon accompagnement',
+    'journey.topic6.badge':          'Rayonnement & Sérénité',
     'journey.topic6.content':        'Ce voyage de 88 jours est une invitation intime à ralentir, à te retrouver et à vivre en harmonie avec ta véritable essence. Commence dès maintenant en découvrant ton guide gratuit ou contacte directement Latifa pour échanger sur ton cheminement.',
     'journey.topic6.ctaPrimary':     'Accéder à l\'E-book gratuit',
     'journey.topic6.ctaWhatsapp':    'Échanger sur WhatsApp',
@@ -306,10 +313,13 @@ const translations = {
 
     // Topic 1
     'journey.topic1.title':          'مرحباً بكِ في رحلة تحوّلكِ',
+    'journey.topic1.badge':          'بداية الرحلة',
     'journey.topic1.content':        'على مدار 88 يوماً، نعبر معاً نهر التغيير. أمانكِ الداخلي هو نقطة انطلاقنا الأساسية.',
+    'journey.topic1.subnote':        'مرافقة خطوة بخطوة، وفق وتيرتكِ الخاصة، بكل لطف ومحبة.',
 
     // Topic 2
     'journey.topic2.title':          'خبراتي في خدمة تحوّلكِ',
+    'journey.topic2.badge':          'المرافقة والحضور',
     'journey.topic2.cat1.title':     'التدريب والمرافقة',
     'journey.topic2.cat1.item1':     'ماستر كوتش (Master Coach)',
     'journey.topic2.cat1.item2':     'كوتشينغ الحياة (Life Coaching)',
@@ -331,6 +341,7 @@ const translations = {
 
     // Topic 3
     'journey.topic3.title':          'الركائز الثلاث لتحوّلكِ',
+    'journey.topic3.badge':          'الأسس الثلاثة',
     'journey.topic3.p1.title':       'الجسد',
     'journey.topic3.p1.text':        'استعادة الاتصال العميق بجسدكِ من خلال الحركة الواعية.',
     'journey.topic3.p2.title':       'المشاعر',
@@ -340,11 +351,13 @@ const translations = {
 
     // Topic 4
     'journey.topic4.title':          'لمن تتوجه هذه الرحلة التحويلية؟',
+    'journey.topic4.badge':          'العودة إلى الذات',
     'journey.topic4.p1':             'إليكِ، يا من تمنحين الكثير للآخرين وتشعرين اليوم بحاجة ملحة للعودة إلى ذاتكِ.',
     'journey.topic4.p2':             'إليكِ، يا من ترغبين في استعادة التواصل مع جسدكِ، واحتضان مشاعركِ، وكشف أنوثتكِ الحقيقية بكل سلام.',
 
     // Topic 5
     'journey.topic5.title':          'البرنامج: كيف يتم تحوّلكِ في 88 يوماً؟',
+    'journey.topic5.badge':          'برنامج 88 يوماً',
     'journey.topic5.s1.badge':       'المرحلة 01',
     'journey.topic5.s1.title':       'إعادة الاتصال بالجسد',
     'journey.topic5.s1.text':        'استعيدي اتصالاً عميقاً بجسدكِ من خلال الحركة الواعية والتنفس والإصغاء لأحاسيسكِ. تعلّمي احترام وتيرتكِ الخاصة والعناية بذاتكِ بكل لطف.',
@@ -357,6 +370,7 @@ const translations = {
 
     // Topic 6
     'journey.topic6.title':          'اكتشفي مرافقتي الخاصة',
+    'journey.topic6.badge':          'إشراق وسكينة',
     'journey.topic6.content':        'هذه الرحلة التي تستمر 88 يوماً هي دعوة حميمة للتمهل والعودة إلى نفسكِ والعيش في انسجام تام مع جوهركِ الحقيقي. ابدئي الآن باكتشاف دليلكِ المجاني أو تواصلي مباشرة مع لطيفة للحديث حول مساركِ.',
     'journey.topic6.ctaPrimary':     'الحصول على الكتاب المجاني',
     'journey.topic6.ctaWhatsapp':    'تواصل عبر واتساب',
@@ -499,10 +513,13 @@ const translations = {
 
     // Topic 1
     'journey.topic1.title':          'Welcome to your transformational journey',
+    'journey.topic1.badge':          'The Beginning of the Journey',
     'journey.topic1.content':        'For 88 days, we cross the river of change together. Your inner safety is our starting point.',
+    'journey.topic1.subnote':        'Step-by-step guidance, at your own pace, with gentleness and kindness.',
 
     // Topic 2
     'journey.topic2.title':          'My expertise dedicated to your transformation',
+    'journey.topic2.badge':          'Mentorship & Presence',
     'journey.topic2.cat1.title':     'Coaching & Guidance',
     'journey.topic2.cat1.item1':     'Master Coach',
     'journey.topic2.cat1.item2':     'Life Coaching',
@@ -524,6 +541,7 @@ const translations = {
 
     // Topic 3
     'journey.topic3.title':          'The 3 Pillars of your transformation',
+    'journey.topic3.badge':          'The Foundations',
     'journey.topic3.p1.title':       'The Body',
     'journey.topic3.p1.text':        'Rediscover the connection to your body through conscious movement.',
     'journey.topic3.p2.title':       'Emotions',
@@ -533,11 +551,13 @@ const translations = {
 
     // Topic 4
     'journey.topic4.title':          'Who is this transformation for?',
+    'journey.topic4.badge':          'Returning to Yourself',
     'journey.topic4.p1':             'For you, a woman who gives so much to others and now feels the need to return to yourself.',
     'journey.topic4.p2':             'For you, who wishes to reconnect with your body, welcome your emotions, and reveal your authentic femininity.',
 
     // Topic 5
     'journey.topic5.title':          'The Program: How does your 88-day transformation unfold?',
+    'journey.topic5.badge':          '88-Day Program',
     'journey.topic5.s1.badge':       'Stage 01',
     'journey.topic5.s1.title':       'Reconnecting with your body',
     'journey.topic5.s1.text':        'Rediscover a deep connection with your body through conscious movement, breathwork, and tuning into your sensations. Learn to honor your own pace and care for yourself with tenderness.',
@@ -550,6 +570,7 @@ const translations = {
 
     // Topic 6
     'journey.topic6.title':          'Discover my guidance & mentorship',
+    'journey.topic6.badge':          'Radiance & Serenity',
     'journey.topic6.content':        'This 88-day journey is an intimate invitation to slow down, reconnect with yourself, and live in harmony with your true essence. Begin today by discovering your free guide, or reach out directly to Latifa to discuss your journey.',
     'journey.topic6.ctaPrimary':     'Access the free E-book',
     'journey.topic6.ctaWhatsapp':    'Connect on WhatsApp',
@@ -1597,66 +1618,62 @@ function initJourneyAccordion() {
   const accordion = document.getElementById('journeyAccordion');
   if (!accordion) return;
 
-  const buttons = Array.from(accordion.querySelectorAll('.journey-btn'));
+  const items = Array.from(accordion.querySelectorAll('.journey-item'));
 
-  function closePanel(btn, panel) {
+  function closeItem(item) {
+    const btn = item.querySelector('.journey-btn');
+    const panel = item.querySelector('.journey-panel');
+    if (!btn || !panel) return;
     btn.setAttribute('aria-expanded', 'false');
     btn.classList.remove('is-active');
     panel.classList.remove('is-open');
-    setTimeout(() => {
-      if (btn.getAttribute('aria-expanded') === 'false') {
-        panel.hidden = true;
-      }
-    }, 380);
   }
 
-  function openPanel(btn, panel) {
-    panel.hidden = false;
-    void panel.offsetHeight; // trigger reflow
+  function openItem(item) {
+    const btn = item.querySelector('.journey-btn');
+    const panel = item.querySelector('.journey-panel');
+    if (!btn || !panel) return;
     btn.setAttribute('aria-expanded', 'true');
     btn.classList.add('is-active');
     panel.classList.add('is-open');
   }
 
-  buttons.forEach((btn, index) => {
+  items.forEach((item, index) => {
+    const btn = item.querySelector('.journey-btn');
+    if (!btn) return;
+
     btn.addEventListener('click', () => {
       const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-      const panelId = btn.getAttribute('aria-controls');
-      const panel = document.getElementById(panelId);
-      if (!panel) return;
 
       // Close all other panels
-      buttons.forEach(otherBtn => {
-        if (otherBtn !== btn && otherBtn.getAttribute('aria-expanded') === 'true') {
-          const otherPanelId = otherBtn.getAttribute('aria-controls');
-          const otherPanel = document.getElementById(otherPanelId);
-          if (otherPanel) closePanel(otherBtn, otherPanel);
-        }
+      items.forEach(otherItem => {
+        if (otherItem !== item) closeItem(otherItem);
       });
 
       // Toggle current panel
       if (isExpanded) {
-        closePanel(btn, panel);
+        closeItem(item);
       } else {
-        openPanel(btn, panel);
+        openItem(item);
       }
     });
 
     // Keyboard support: Arrow navigation
     btn.addEventListener('keydown', e => {
+      const allBtns = items.map(it => it.querySelector('.journey-btn')).filter(Boolean);
       let targetBtn = null;
       if (e.key === 'ArrowDown') {
         e.preventDefault();
-        targetBtn = buttons[(index + 1) % buttons.length];
+        targetBtn = allBtns[(index + 1) % allBtns.length];
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
-        targetBtn = buttons[(index - 1 + buttons.length) % buttons.length];
+        targetBtn = allBtns[(index - 1 + allBtns.length) % allBtns.length];
       } else if (e.key === 'Home') {
         e.preventDefault();
-        targetBtn = buttons[0];
+        targetBtn = allBtns[0];
       } else if (e.key === 'End') {
         e.preventDefault();
-        targetBtn = buttons[buttons.length - 1];
+        targetBtn = allBtns[allBtns.length - 1];
       }
       if (targetBtn) targetBtn.focus();
     });
