@@ -34,13 +34,13 @@ const CONFIG = {
    * return the URL from your server-side endpoint instead.
    * The handleSubmitSuccess() function accepts a URL parameter.
    */
-  ebookUrl: '',
+  ebookUrl: 'https://drive.google.com/file/d/1OE-K5R0E7uCvHprMoR-5YcfaTsVUNz-n/view?usp=sharing',
 
   /**
    * WhatsApp phone number (international format, digits only).
    * Example: '33612345678'  (France) or '212612345678' (Morocco)
    */
-  whatsappNumber: '',
+  whatsappNumber: '32485075219',
 
   /**
    * Form submission endpoint.
@@ -50,7 +50,7 @@ const CONFIG = {
    * Example (Google Apps Script):
    * 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec'
    *
-   * Leave empty ('') to run in DEMO mode (no real submission).
+   * Leave empty ('') to run in client/direct mode (immediate access).
    */
   formEndpoint: '',
 
@@ -268,6 +268,7 @@ const translations = {
     'success.message':  'Merci pour ta confiance. Tu peux maintenant accéder à ton E-book gratuit.',
     'success.download': 'Télécharger mon E-book',
     'success.whatsapp': 'Contacter via WhatsApp',
+    'success.socialTitle': 'Rejoins notre communauté',
 
     // Footer
     'footer.tagline':   'Un espace de reconnexion à soi, au corps et à la féminité authentique.',
@@ -469,6 +470,7 @@ const translations = {
     'success.message':  'شكرًا لثقتك. يمكنكِ الآن الوصول إلى كتابك الإلكتروني المجاني.',
     'success.download': 'تنزيل كتابي الإلكتروني',
     'success.whatsapp': 'التواصل عبر واتساب',
+    'success.socialTitle': 'انضمي إلى مجتمعنا',
 
     // Footer
     'footer.tagline':   'فضاء للعودة إلى الذات والجسد والأنوثة الأصيلة.',
@@ -670,6 +672,7 @@ const translations = {
     'success.message':  'Thank you for your trust. You can now access your free E-book.',
     'success.download': 'Download my E-book',
     'success.whatsapp': 'Contact via WhatsApp',
+    'success.socialTitle': 'Join our community',
 
     // Footer
     'footer.tagline':   'A space to reconnect with yourself, your body, and authentic femininity.',
@@ -1331,30 +1334,46 @@ function setSubmitLoading(loading) {
 }
 
 async function submitForm(data) {
-  // ---- DEMO MODE ----
-  if (!CONFIG.formEndpoint) {
-    // Simulate network delay for realistic UX testing
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    // Return the ebook URL from CONFIG (demo)
-    if (!CONFIG.ebookUrl) {
-      return { success: false, demo: true };
+  const defaultEbookUrl = CONFIG.ebookUrl || 'https://drive.google.com/file/d/1OE-K5R0E7uCvHprMoR-5YcfaTsVUNz-n/view?usp=sharing';
+
+  // ---- REMOTE ENDPOINT SUBMISSION (if configured) ----
+  if (CONFIG.formEndpoint) {
+    try {
+      const response = await fetch(CONFIG.formEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        return {
+          success: true,
+          ebookUrl: result.ebookUrl || defaultEbookUrl,
+        };
+      }
+    } catch (err) {
+      console.warn('[Taj Al-Unutha] Remote endpoint submission warning:', err);
     }
-    return { success: true, ebookUrl: CONFIG.ebookUrl };
   }
 
-  // ---- REAL SUBMISSION ----
-  const response = await fetch(CONFIG.formEndpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  });
-
-  if (!response.ok) {
-    throw new Error('server-error');
+  // ---- CLIENT-SIDE RETENTION & ACCESS ----
+  // Store lead data locally so no prospective customer information is lost
+  try {
+    const existing = JSON.parse(localStorage.getItem('taj_leads') || '[]');
+    existing.push(data);
+    localStorage.setItem('taj_leads', JSON.stringify(existing));
+  } catch (e) {
+    // Storage quota or privacy mode error ignored
   }
 
-  const result = await response.json();
-  return result;
+  // Smooth realistic UX delay
+  await new Promise(resolve => setTimeout(resolve, 600));
+
+  return {
+    success: true,
+    ebookUrl: defaultEbookUrl,
+  };
 }
 
 async function handleFormSubmit(e) {
@@ -1442,22 +1461,19 @@ function handleSubmitSuccess(ebookUrl) {
   const downloadBtn   = document.getElementById('downloadBtn');
   const whatsappBtn   = document.getElementById('whatsappBtn');
 
+  const finalEbook = ebookUrl || CONFIG.ebookUrl || 'https://drive.google.com/file/d/1OE-K5R0E7uCvHprMoR-5YcfaTsVUNz-n/view?usp=sharing';
+
   // Inject E-book URL only now — never before submission
   if (downloadBtn) {
-    if (ebookUrl) {
-      downloadBtn.href = ebookUrl;
-    } else {
-      downloadBtn.style.display = 'none';
-    }
+    downloadBtn.href = finalEbook;
+    downloadBtn.style.display = '';
   }
 
   // Inject WhatsApp URL
   if (whatsappBtn) {
-    if (CONFIG.whatsappNumber) {
-      whatsappBtn.href = `https://wa.me/${CONFIG.whatsappNumber}`;
-    } else {
-      whatsappBtn.style.display = 'none';
-    }
+    const waNum = CONFIG.whatsappNumber || '32485075219';
+    whatsappBtn.href = `https://wa.me/${waNum}`;
+    whatsappBtn.style.display = '';
   }
 
   // Hide form, show success

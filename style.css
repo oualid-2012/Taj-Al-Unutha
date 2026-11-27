@@ -2290,6 +2290,12 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
 /* ================================================================
    12. SUCCESS SECTION
 ================================================================ */
+[hidden],
+.success-section[hidden],
+.lead-form[hidden] {
+  display: none !important;
+}
+
 .success-section {
   display: flex;
   flex-direction: column;
@@ -2360,6 +2366,62 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
 
 .success-section .btn {
   min-width: 260px;
+}
+
+/* Success Social Media in Thank You Card Footer */
+.success-social {
+  margin-top: var(--space-4);
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(201, 167, 123, 0.25);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.success-social__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  letter-spacing: 0.02em;
+}
+
+.success-social__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.success-social__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(237, 236, 227, 0.65);
+  color: var(--color-charcoal);
+  border: 1px solid rgba(201, 167, 123, 0.35);
+  transition: all var(--transition-fast);
+}
+
+.success-social__link:hover {
+  background: var(--color-champagne);
+  color: #fff;
+  border-color: var(--color-champagne);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(201, 167, 123, 0.25);
+}
+
+.success-social__link svg {
+  flex-shrink: 0;
 }
 
 
@@ -2742,6 +2804,9 @@ html[dir="rtl"] {
 
   /* Phone field */
   .phone-field { flex-direction: row-reverse; }
+
+  /* Success social RTL */
+  .success-social__links { flex-direction: row-reverse; }
 
   /* Country dropdown — open from right in RTL */
   .country-dropdown {
