@@ -57,6 +57,7 @@
   --space-4:  16px;
   --space-5:  20px;
   --space-6:  24px;
+  --space-7:  28px;
   --space-8:  32px;
   --space-10: 40px;
   --space-12: 48px;
@@ -959,7 +960,7 @@ p {
 }
 
 .transformation__container {
-  max-width: 1140px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 0 var(--space-8);
 }
@@ -992,7 +993,7 @@ p {
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  padding: var(--space-5) var(--space-7);
+  padding: 22px 28px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -1010,19 +1011,20 @@ p {
 
 .journey-btn__number {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--color-champagne);
-  opacity: 0.9;
+  letter-spacing: 0.04em;
+  opacity: 0.95;
   flex-shrink: 0;
-  min-width: 28px;
+  min-width: 32px;
 }
 
 .journey-btn__title {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 600;
-  line-height: 1.3;
+  line-height: 1.35;
   flex: 1;
   color: var(--color-charcoal);
   transition: color var(--transition-base);
@@ -1077,16 +1079,18 @@ p {
 .journey-panel__inner {
   min-height: 0;
   overflow: hidden;
-  padding: 0 var(--space-7) var(--space-7);
+  padding: 0 28px 28px;
 }
 
 /* Modern Exploration Layout (Media + Content) */
 .journey-layout {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: var(--space-7);
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
   align-items: center;
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(201, 167, 123, 0.2);
 }
 
 .journey-layout--expertise,
@@ -2190,11 +2194,11 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
 .phone-input { flex: 1; }
 
 
-/* ---- INTEREST CARDS ---- */
+/* ---- INTEREST CARDS (COMPACT PILLS) ---- */
 .interest-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: var(--space-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
   margin-top: var(--space-2);
 }
 
@@ -2207,42 +2211,41 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
 }
 
 .interest-card {
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-5) var(--space-3);
-  background: var(--color-ivory);
-  border: 1.5px solid var(--color-sage-light);
-  border-radius: var(--radius-md);
+  justify-content: center;
+  padding: 8px 16px;
+  background: var(--color-warm-white);
+  border: 1.2px solid rgba(201, 167, 123, 0.38);
+  border-radius: var(--radius-full);
   cursor: pointer;
-  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+  transition: all var(--transition-fast);
   text-align: center;
   user-select: none;
 }
 
 .interest-card:hover {
-  border-color: var(--color-sage);
-  background: rgba(168,180,154,.1);
-  transform: translateY(-2px);
+  border-color: var(--color-champagne);
+  background: rgba(201, 167, 123, 0.1);
+  transform: translateY(-1px);
 }
 
 .interest-card:has(.interest-radio:checked) {
   border-color: var(--color-champagne);
-  background: rgba(201,167,123,.1);
-  box-shadow: 0 0 0 3px rgba(201,167,123,.15);
+  background: var(--color-champagne);
+  box-shadow: 0 3px 12px rgba(201, 167, 123, 0.28);
 }
 
-.interest-card__icon {
-  font-size: 1.5rem;
-  line-height: 1;
+.interest-card:has(.interest-radio:checked) .interest-card__label {
+  color: #fff;
+  font-weight: 600;
 }
 
 .interest-card__label {
-  font-size: .82rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--color-charcoal);
-  line-height: 1.3;
+  line-height: 1.25;
 }
 
 
@@ -2771,7 +2774,9 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
   .country-dropdown { width: 100%; }
 
   /* Interest cards */
-  .interest-cards { grid-template-columns: repeat(2, 1fr); }
+  .interest-cards { gap: 6px 8px; }
+  .interest-card { padding: 6px 12px; }
+  .interest-card__label { font-size: 0.8rem; }
 
   /* Footer */
   .footer { padding: var(--space-10) 0 var(--space-6); }
