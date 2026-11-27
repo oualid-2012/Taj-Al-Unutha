@@ -41,17 +41,20 @@
       <div class="nav__controls">
         <!-- Language Selector -->
         <div class="lang-selector" id="langSelector">
-          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtn">
-            <span class="lang-selector__flag" id="langFlag">🇫🇷</span>
+          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtn" aria-label="Choisir la langue">
+            <svg class="lang-selector__globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
             <span class="lang-selector__code" id="langCode">FR</span>
             <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
           <ul class="lang-selector__dropdown" role="listbox" id="langDropdown">
-            <li role="option" class="lang-option" data-lang="fr">🇫🇷 <span>Français</span></li>
-            <li role="option" class="lang-option" data-lang="ar">🇸🇦 <span>العربية</span></li>
-            <li role="option" class="lang-option" data-lang="en">🇬🇧 <span>English</span></li>
+            <li role="option" class="lang-option is-active" data-lang="fr"><span>Français</span></li>
+            <li role="option" class="lang-option" data-lang="ar"><span>العربية</span></li>
+            <li role="option" class="lang-option" data-lang="en"><span>English</span></li>
           </ul>
         </div>
 
@@ -1173,20 +1176,34 @@
         </p>
       </div>
 
-      <div class="footer__social">
+      <div class="footer__social" role="list">
         <!-- Instagram -->
-        <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram Taj Al-Unutha">
+        <a href="https://instagram.com/latifa.el.azhar" class="footer__social-link" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Instagram Taj Al-Unutha">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
             <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
             <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
           </svg>
         </a>
+        <!-- YouTube -->
+        <a href="https://youtube.com/@Latifacoaching" class="footer__social-link" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="YouTube Taj Al-Unutha">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.955-1.966C18.88 4 12 4 12 4s-6.88 0-8.585.454A2.78 2.78 0 0 0 1.46 6.42 29.1 29.1 0 0 0 1 12a29.1 29.1 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.955 1.966C5.12 20 12 20 12 20s6.88 0 8.585-.454a2.78 2.78 0 0 0 1.955-1.966A29.1 29.1 0 0 0 23 12a29.1 29.1 0 0 0-.46-5.58z" stroke="currentColor" stroke-width="1.5"/>
+            <polygon points="9.75,15.02 15.5,12 9.75,8.98 9.75,15.02" fill="currentColor"/>
+          </svg>
+        </a>
         <!-- WhatsApp -->
-        <a href="#" class="footer__social-link footer__whatsapp-link" id="footerWhatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Taj Al-Unutha">
+        <a href="https://wa.me/32485075219" class="footer__social-link footer__whatsapp-link" id="footerWhatsapp" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="WhatsApp Taj Al-Unutha">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
             <path d="M11.998 2C6.477 2 2 6.477 2 12c0 1.774.46 3.441 1.264 4.898L2 22l5.237-1.237A9.954 9.954 0 0 0 12 22c5.523 0 10-4.477 10-10S17.521 2 11.998 2zm0 18.182a8.164 8.164 0 0 1-4.17-1.146l-.298-.178-3.108.733.766-3.025-.195-.311A8.168 8.168 0 0 1 3.818 12c0-4.51 3.67-8.182 8.18-8.182S20.18 7.49 20.18 12 16.51 20.182 11.998 20.182z"/>
+          </svg>
+        </a>
+        <!-- Email -->
+        <a href="mailto:latifa.el.azhar@gmail.com" class="footer__social-link" role="listitem" aria-label="Email Taj Al-Unutha">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M2 7.5l9.293 6.196a1.3 1.3 0 0 0 1.414 0L22 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
         </a>
       </div>
@@ -1201,17 +1218,20 @@
       <div class="footer__lang">
         <span class="footer__lang-label" data-i18n="footer.langLabel">Langue :</span>
         <div class="lang-selector lang-selector--footer" id="langSelectorFooter">
-          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtnFooter">
-            <span class="lang-selector__flag" id="langFlagFooter">🇫🇷</span>
+          <button class="lang-selector__btn" aria-haspopup="listbox" aria-expanded="false" id="langBtnFooter" aria-label="Choisir la langue">
+            <svg class="lang-selector__globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
             <span class="lang-selector__code" id="langCodeFooter">FR</span>
             <svg class="lang-selector__chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </button>
           <ul class="lang-selector__dropdown lang-selector__dropdown--up" role="listbox" id="langDropdownFooter">
-            <li role="option" class="lang-option" data-lang="fr">🇫🇷 <span>Français</span></li>
-            <li role="option" class="lang-option" data-lang="ar">🇸🇦 <span>العربية</span></li>
-            <li role="option" class="lang-option" data-lang="en">🇬🇧 <span>English</span></li>
+            <li role="option" class="lang-option is-active" data-lang="fr"><span>Français</span></li>
+            <li role="option" class="lang-option" data-lang="ar"><span>العربية</span></li>
+            <li role="option" class="lang-option" data-lang="en"><span>English</span></li>
           </ul>
         </div>
       </div>

@@ -888,9 +888,9 @@ const COUNTRIES = [
 let currentLang = sessionStorage.getItem('taj-lang') || CONFIG.defaultLang;
 
 const langMeta = {
-  fr: { flag: '🇫🇷', code: 'FR', dir: 'ltr' },
-  ar: { flag: '🇸🇦', code: 'عر',  dir: 'rtl' },
-  en: { flag: '🇬🇧', code: 'EN', dir: 'ltr' },
+  fr: { code: 'FR', label: 'Français', dir: 'ltr' },
+  ar: { code: 'العربية', label: 'العربية', dir: 'rtl' },
+  en: { code: 'EN', label: 'English', dir: 'ltr' },
 };
 
 /**
@@ -961,15 +961,11 @@ function applyLanguage(lang) {
 
 function updateLangSelectors(lang, meta) {
   // Nav selector
-  const flagEl  = document.getElementById('langFlag');
-  const codeEl  = document.getElementById('langCode');
-  if (flagEl) flagEl.textContent = meta.flag;
+  const codeEl = document.getElementById('langCode');
   if (codeEl) codeEl.textContent = meta.code;
 
   // Footer selector
-  const flagFooter = document.getElementById('langFlagFooter');
   const codeFooter = document.getElementById('langCodeFooter');
-  if (flagFooter) flagFooter.textContent = meta.flag;
   if (codeFooter) codeFooter.textContent = meta.code;
 
   // Mark active options in all dropdowns
