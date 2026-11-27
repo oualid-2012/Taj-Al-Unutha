@@ -1961,19 +1961,56 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
   overflow: hidden;
 }
 
-.form-section .section-title {
-  color: #fff;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+/* Subtle darkened overlay behind text to guarantee perfect readability on any screen */
+.form-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48%;
+  background: linear-gradient(180deg, rgba(18, 22, 20, 0.68) 0%, rgba(18, 22, 20, 0.42) 70%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
-.form-section .section-subtitle {
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+.form-section .section-header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: var(--space-10);
 }
 
 .form-section .section-eyebrow {
-  color: var(--color-champagne-light);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  background: rgba(20, 24, 22, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #F3E5D0;
+  border: 1px solid rgba(201, 167, 123, 0.5);
+  border-radius: var(--radius-full);
+  padding: 6px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.form-section .section-title {
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-shadow: 0 3px 16px rgba(0, 0, 0, 0.85), 0 1px 4px rgba(0, 0, 0, 0.9);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.form-section .section-subtitle {
+  color: #FFFFFF;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85), 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .form-section__container {
