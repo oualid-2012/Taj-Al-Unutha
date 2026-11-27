@@ -2100,11 +2100,25 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
   font-size: .82rem;
   color: var(--color-error);
   margin-top: var(--space-2);
-  min-height: 1.2em;
+}
+
+.form-error:empty {
+  display: none;
+  margin: 0;
+}
+
+#fg-interest {
+  margin-bottom: var(--space-4);
+}
+
+#fg-interest .form-error:empty {
+  display: none;
+  margin: 0;
 }
 
 /* Conditional followup */
 .form-group--conditional {
+  display: none;
   overflow: hidden;
   max-height: 0;
   opacity: 0;
@@ -2113,9 +2127,11 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
 }
 
 .form-group--conditional.is-visible {
+  display: block;
   max-height: 200px;
   opacity: 1;
-  margin-bottom: var(--space-7, 28px);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-6);
 }
 
 /* Form link */
