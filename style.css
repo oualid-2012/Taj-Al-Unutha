@@ -1951,14 +1951,37 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
    11. FORM SECTION
 ================================================================ */
 .form-section {
-  background: var(--color-ivory);
+  position: relative;
+  background-color: #2b302c;
+  background-image: url('Asset/section-e-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: var(--space-32) 0;
+  overflow: hidden;
+}
+
+.form-section .section-title {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.form-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.form-section .section-eyebrow {
+  color: var(--color-champagne-light);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
 }
 
 .form-section__container {
   max-width: 680px;
   margin: 0 auto;
   padding: 0 var(--space-8);
+  position: relative;
+  z-index: 2;
 }
 
 /* Form */
