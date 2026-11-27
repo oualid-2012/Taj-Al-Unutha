@@ -1519,8 +1519,8 @@ html[dir="rtl"] .expertise-card__list li::before {
 ================================================================ */
 .about {
   position: relative;
-  background-color: #faf9f5;
-  background-image: linear-gradient(135deg, rgba(250, 249, 245, 0.45) 0%, rgba(250, 249, 245, 0.82) 100%), url('Asset/about-flowers-bg.webp');
+  background-color: #f7f6f8;
+  background-image: url('Asset/section-d-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
