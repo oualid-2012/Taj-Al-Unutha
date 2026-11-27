@@ -222,6 +222,7 @@ const translations = {
     'form.emailLabel':       'Adresse e-mail',
     'form.emailPlaceholder': 'ton@email.com',
     'form.interestLabel':    'Pourquoi cet E-book t\'intéresse-t-il\u00a0?',
+    'form.optional':         '(optionnel)',
     'form.followupPlaceholder': 'Ta réponse…',
 
     // Interest options
@@ -422,6 +423,7 @@ const translations = {
     'form.emailLabel':       'البريد الإلكتروني',
     'form.emailPlaceholder': 'بريدك@الإلكتروني.com',
     'form.interestLabel':    'لماذا يهمكِ هذا الكتاب الإلكتروني؟',
+    'form.optional':         '(اختياري)',
     'form.followupPlaceholder': 'إجابتك…',
 
     // Interest options
@@ -622,6 +624,7 @@ const translations = {
     'form.emailLabel':       'Email address',
     'form.emailPlaceholder': 'your@email.com',
     'form.interestLabel':    'Why are you interested in this E-book?',
+    'form.optional':         '(optional)',
     'form.followupPlaceholder': 'Your answer…',
 
     // Interest options
@@ -1266,30 +1269,21 @@ function validateForm() {
     phone.classList.remove('is-error');
   }
 
-  // 3. Email
+  // 3. Email (optional)
   const email = document.getElementById('emailInput');
+  const emailVal = email.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-  if (!email.value.trim()) {
-    showFieldError('err-email', t('err.email.required'));
-    email.classList.add('is-error');
-    if (valid) email.focus();
-    valid = false;
-  } else if (!emailRegex.test(email.value.trim())) {
+  if (emailVal && !emailRegex.test(emailVal)) {
     showFieldError('err-email', t('err.email.invalid'));
     email.classList.add('is-error');
     if (valid) email.focus();
     valid = false;
   } else {
     email.classList.remove('is-error');
+    showFieldError('err-email', '');
   }
 
-  // 4. Interest
-  const interest = document.querySelector('.interest-radio:checked');
-  if (!interest) {
-    showFieldError('err-interest', t('err.interest.required'));
-    if (valid) document.getElementById('fg-interest').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    valid = false;
-  }
+  // 4. Interest (optional)
 
   // 5. Privacy consent
   const privacy = document.getElementById('privacyConsent');
@@ -1422,6 +1416,9 @@ function initForm() {
         if (el.value.trim() && !emailRegex.test(el.value.trim())) {
           showFieldError('err-email', t('err.email.invalid'));
           el.classList.add('is-error');
+        } else {
+          showFieldError('err-email', '');
+          el.classList.remove('is-error');
         }
       }
     });

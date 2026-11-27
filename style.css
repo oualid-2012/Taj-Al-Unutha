@@ -1965,6 +1965,14 @@ html[dir="rtl"] .testimonials__belt { direction: ltr; }
   margin-left: var(--space-1);
 }
 
+.form-optional {
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--color-deep-sage);
+  opacity: .75;
+  margin-left: var(--space-2);
+}
+
 /* Inputs */
 .form-input {
   width: 100%;
@@ -2720,6 +2728,10 @@ html[dir="rtl"] {
 
   /* Form labels */
   .form-label { text-align: right; }
+  .form-optional {
+    margin-left: 0;
+    margin-right: var(--space-2);
+  }
 
   /* Checkbox */
   .checkbox-label { flex-direction: row-reverse; }
