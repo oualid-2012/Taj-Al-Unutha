@@ -26,15 +26,10 @@
    ================================================================ */
 const CONFIG = {
   /**
-   * Google Drive or any public URL for the E-book.
-   * This URL is ONLY injected into the DOM AFTER a successful
-   * form submission, so it is not visible in the initial HTML.
-   *
-   * For true access restriction, leave this empty ('') and
-   * return the URL from your server-side endpoint instead.
-   * The handleSubmitSuccess() function accepts a URL parameter.
+   * Path or URL for the E-book download.
+   * This file is injected into the DOM AFTER a successful form submission.
    */
-  ebookUrl: 'https://drive.google.com/file/d/1OE-K5R0E7uCvHprMoR-5YcfaTsVUNz-n/view?usp=sharing',
+  ebookUrl: 'Asset/ebook.pdf',
 
   /**
    * WhatsApp phone number (international format, digits only).
@@ -1457,11 +1452,12 @@ function handleSubmitSuccess(ebookUrl) {
   const downloadBtn   = document.getElementById('downloadBtn');
   const whatsappBtn   = document.getElementById('whatsappBtn');
 
-  const finalEbook = ebookUrl || CONFIG.ebookUrl || 'https://drive.google.com/file/d/1OE-K5R0E7uCvHprMoR-5YcfaTsVUNz-n/view?usp=sharing';
+  const finalEbook = ebookUrl || CONFIG.ebookUrl || 'Asset/ebook.pdf';
 
-  // Inject E-book URL only now — never before submission
+  // Inject E-book URL and download attribute only now — never before submission
   if (downloadBtn) {
     downloadBtn.href = finalEbook;
+    downloadBtn.setAttribute('download', 'Reprogrammer son esprit _ voyage interieur E-book.pdf');
     downloadBtn.style.display = '';
   }
 
